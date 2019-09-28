@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>KNBL</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<!-- Header inside body -->
+<header class="top-line">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg py-3 navbar-dark">
+                    <a class="navbar-login" href="http://knbl.pro/login.html">
+                        <img src="img/enter.png" alt="">
+                    </a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo_header.svg" alt="Logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMainMenu"
+                            aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarMainMenu">
+                        <ul class="navbar-nav nav-header-menu">
+                            <li class="nav-item navbar__item active">
+                                <a class="nav-link" href="index.html#">Правила <span
+                                      class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item navbar__item">
+                                <a class="nav-link" href="index.html#">Рейтинг</a>
+                            </li>
+                            <li class="nav-item navbar__item">
+                                <a class="nav-link" href="index.html#">Турниры</a>
+                            </li>
+                            <li class="nav-item navbar__item">
+                                <a class="nav-link nav__pro" href="index.html#">PRO</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav nav-language">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle nav-language__button" href="index.html#"
+                                   id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <img src="img/flag_ru_small.png" alt="">
+                                    <span class="text">RU</span>
+                                </a>
+                                <div class="dropdown-menu nav-language__menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="index.html#"><img src="img/flag_us_big.png" alt="">&nbsp;EN</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="user__rating-wrapper">
+                            <div class="money-user">
+                                <div class="account-rate">
+                                    T
+                                </div>
+                                <h4 class="the-sum">999 999 ₽</h4>
+                            </div>
+
+                            <div class="user__rating">
+                                <div class="icon"><img src="img/pro-league-top.png" alt=""></div>
+                                <h4>127 432</h4>
+                            </div>
+                        </div>
+
+                        <div class="user-account dropdown ml-auto">
+                            <div class="icon"><img src="img/login_top.png" alt=""></div>
+                            <div class="text dropdown-toggle" data-toggle="dropdown" id="userDropdown">
+                                <h4>Administrator</h4>
+                                <div class="icon-flag"><img src="img/flag_ru_big.png" alt=""></div>
+                            </div>
+
+                            <div class="dropdown-menu dropdown-menu__user" aria-labelledby="userDropdown">
+                                <div class="btn-close"><img src="img/exit.png" alt=""></div>
+
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon"><img src="img/home.png" alt=""></span>
+                                    <span class="text">Личный кабинет</span>
+                                </a>
+
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon"><img src="img/enter.png" alt=""></span>
+                                    <span class="text">Выйти</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /.collapse -->
+                </nav>
+
+                <div class="fixed-tabs__menu">
+                    <a href="#" class="main-mail"><img src="img/contacts/mail.png" alt="">
+                        <span class="icon"></span>
+                    </a>
+                    <a href="#" class="replenish-account">Пополнить счет</a>
+                    <a href="#" class="withdraw">Вывести </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- the content -->
+<main class="main-content container-fluid">
+
+    <div class="section-profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills nav-tabs" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                               role="tab" aria-controls="pills-home" aria-selected="true">Профиль</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                               role="tab" aria-controls="pills-profile" aria-selected="false">Статистика игр</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                               role="tab" aria-controls="pills-contact" aria-selected="false">Реферальная программа</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-help-tab" data-toggle="pill" href="#help-support" role="tab"
+                               aria-controls="pills-contact" aria-selected="false">Техническая поддержка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-bets-tab" data-toggle="pill" href="#bets" role="tab"
+                               aria-controls="pills-contact" aria-selected="false">Ставки</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                             aria-labelledby="pills-home-tab">
+
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+
+                                    <div class="profile-box user-information">
+                                        <div class="user-information__photo">
+                                            <div class="photo">
+                                                <img src="img/avatar.png" alt="">
+                                            </div>
+
+                                            <a href="#" class="btn-edit">
+                                                <span class="text">Сменить фото</span>
+                                                <span class="icon"><img src="img/pencil.png" alt=""></span>
+                                            </a>
+                                        </div>
+
+                                        <div class="user-information__text">
+                                            <h3 class="name green">ZerglingCarbot</h3>
+
+                                            <ul class="list-contacts">
+                                                <li><a href="mailto:gamer@gmail.com">
+                                                    <span class="icon"><img src="img/contacts/mail_green.png"
+                                                                            alt=""></span>
+                                                    gamer@gmail.com
+                                                </a></li>
+                                                <li><a href="tel:+79998887766" class="phone">
+                                                    <span class="icon"><img src="img/contacts/phont.png" alt=""></span>
+                                                    + 7 (999) 888-77-66</a></li>
+                                            </ul>
+
+                                            <ul class="navbar-nav nav-language">
+                                                <li class="nav-item dropdown">
+                                                    <a class="dropdown-toggle nav-language__button" href="index.html#"
+                                                       id="navbarDropdownLocation" role="button" data-toggle="dropdown"
+                                                       aria-haspopup="true" aria-expanded="false">
+                                                        <img src="img/flag_ru_small.png" alt="">
+                                                        <span class="text">Россия</span>
+                                                    </a>
+                                                    <div class="dropdown-menu nav-language__menu"
+                                                         aria-labelledby="navbarDropdownLocation">
+                                                        <a class="dropdown-item" href="index.html#"><img
+                                                              src="img/flag_us_big.png" alt="">США</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <h4>Валюта:</h4>
+                                            <ul class="navbar-nav nav-language">
+                                                <li class="nav-item dropdown">
+                                                    <a class="dropdown-toggle nav-language__button" href="index.html#"
+                                                       id="navbarDropdownCurrent" role="button" data-toggle="dropdown"
+                                                       aria-haspopup="true" aria-expanded="false">
+                                                        <img src="img/flag_ru_small.png" alt="">
+                                                        <span class="text">RUR - ₽</span>
+                                                    </a>
+                                                    <div class="dropdown-menu nav-language__menu"
+                                                         aria-labelledby="navbarDropdownCurrent">
+                                                        <a class="dropdown-item" href="index.html#"><img
+                                                              src="img/flag_us_big.png" alt="">USD - $</a>
+                                                        <a class="dropdown-item" href="index.html#"><img
+                                                              src="img/flag_es_big.png" alt="">EUR - €</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <a href="#" class="btn-edit">
+                                                <span class="text">Редактировать данные</span>
+                                                <span class="icon"><img src="img/pencil.png" alt=""></span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-box change-password">
+                                        <h3>Сменить пароль</h3>
+                                        <form class="login-form__login change-password__form form">
+                                            <div class="input-group form-group form-label-group">
+                                                <input type="password" class="form-control" id="current_password"
+                                                       placeholder=" " required="">
+                                                <label for="current_password" class="form-control-placeholder">Текущий
+                                                                                                               пароль</label>
+                                            </div>
+                                            <div class="input-group form-group form-label-group">
+                                                <input type="password" class="form-control" id="new_password"
+                                                       placeholder=" " required="">
+                                                <label for="new_password" class="form-control-placeholder">Новый
+                                                                                                           пароль</label>
+                                            </div>
+                                            <div class="input-group form-group form-label-group">
+                                                <input type="password" class="form-control" id="double_password"
+                                                       placeholder=" " required="">
+                                                <label for="double_password" class="form-control-placeholder">Подведить
+                                                                                                              пароль</label>
+                                            </div>
+                                            <button type="submit" class="submit-btn btn btn-primary btn-green">
+                                                Сохранить
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                    <div class="profile-box social-wrapper">
+                                        <h3>Социальные сети</h3>
+
+                                        <ul class="footer__nav-menu footer__nav-social">
+                                            <li><a href="#">
+                                                <span class="icon"><img class="footer__pictogram-button" alt=""
+                                                                        src="img/fb.png"/></span>
+                                                <span class="text">facebook.com/godofchaos</span>
+                                            </a>
+                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
+                                            </li>
+                                            <li><a href="#"><span class="icon">
+                                                <img class="footer__pictogram-button" alt="" src="img/inst.png"/>
+                                            </span>
+                                                <span class="text">Добавить аккаунт</span></a>
+                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
+                                            </li>
+
+                                            <li><a href="#">
+                                                <span class="icon"><img class="footer__pictogram-button" alt=""
+                                                                        src="img/vk.png"/></span>
+                                                <span class="text">Добавить аккаунт</span>
+                                            </a>
+                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
+                                            </li>
+                                            <li><a href="#">
+                                                <span class="icon"><img class="footer__pictogram-button" alt=""
+                                                                        src="img/discord.png"/></span>
+                                                <span class="text">Добавить аккаунт</span></a>
+                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="profile-box balance-account">
+                                        <div class="balance-account__top">
+                                            <div class="question-icon"><img src="img/question.png" alt=""></div>
+                                        </div>
+                                        <div class="the-sum">
+                                            999 999 ₽
+                                        </div>
+
+                                        <div class="score">
+                                            <p>Реальный счет: <span>100₽</span></p>
+                                        </div>
+                                        <div class="btn-wrapper">
+                                            <button class="btn btn-primary btn-green">Пополнить</button>
+
+                                            <button class="btn btn-primary btn-border">Забрать 100₽</button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="profile-box social-wrapper tied-wallets">
+                                        <h3>Привязанные кошельки</h3>
+
+                                        <ul class="footer__nav-menu footer__nav-social">
+                                            <li><a href="#">
+                                                <span class="icon"><img class="footer__pictogram-button" alt=""
+                                                                        src="img/payment/payment_black.png"/></span>
+                                                <span class="text">хххх хххх хххх хххх 9999</span>
+                                            </a>
+                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
+                                            </li>
+                                            <li><a href="#"><span class="icon">
+                                                <img class="footer__pictogram-button" alt=""
+                                                     src="img/payment/qiwi_black.png"/>
+                                            </span>
+                                                <span class="text">Добавить аккаунт</span></a>
+                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
+                                            </li>
+
+                                            <li><a href="#">
+                                                <span class="icon"><img class="footer__pictogram-button" alt=""
+                                                                        src="img/payment/webmoney_black.png"/></span>
+                                                <span class="text">Добавить аккаунт</span>
+                                            </a>
+                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
+                                            </li>
+                                            <li><a href="#">
+                                                <span class="icon"><img class="footer__pictogram-button" alt=""
+                                                                        src="img/payment/yandex_black.png"/></span>
+                                                <span class="text">Добавить аккаунт</span></a>
+                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
+                                            </li>
+                                            <li><a href="#">
+                                                <span class="icon"><img class="footer__pictogram-button" alt=""
+                                                                        src="img/payment/paypal_black.png"/></span>
+                                                <span class="text">Добавить аккаунт</span></a>
+                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                             aria-labelledby="pills-profile-tab">2
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                             aria-labelledby="pills-contact-tab">3
+                        </div>
+                        <div class="tab-pane fade" id="help-support" role="tabpanel"
+                             aria-labelledby="pills-contact-tab">4
+                        </div>
+                        <div class="tab-pane fade" id="bets" role="tabpanel" aria-labelledby="pills-contact-tab">5
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row button-wrapper">
+                <a href="#" class="btn btn-primary btn-green">Сохранить</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+<!-- the content -->
+
+
+<!-- footer -->
+<footer class="bottom-line">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-box">
+                <h3>Навигация</h3>
+                <ul class="footer__nav-menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Правила</a></li>
+                    <li><a href="#">Рейтинг</a></li>
+                    <li><a href="#">Турниры</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-box">
+                <h3>О нас</h3>
+                <ul class="footer__nav-menu">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Сотрудничество</a></li>
+                    <li><a href="#">Реферальная программа</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-box">
+                <h3>Соглашения</h3>
+                <ul class="footer__nav-menu">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li>2019 &copy; KNBL</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="footer__circled-age">
+                    <img src="img/18+.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-box">
+                <h3>Платежные системы</h3>
+                <ul class="footer__nav-menu footer__nav-social">
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/visa.png"/></li>
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/mastercard.png"/></li>
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/paypal.png"/></li>
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/webmoney.png"/></li>
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/yandex-money.png"/></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-box">
+                <h3>Присоединяйтесь к нам</h3>
+                <ul class="footer__nav-menu footer__nav-social">
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/vk.png"/></a></li>
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/telegram.png"/></a>
+                    </li>
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/instagram.png"/></a>
+                    </li>
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/facebook.png"/></a>
+                    </li>
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/youtube.png"/></a>
+                    </li>
+                    <li>
+                        <a href="#"> <img class="footer__pictogram-button" alt="" src="img/contacts/discord.png"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"-->
+<!--        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
+<!--        crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

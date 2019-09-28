@@ -1,0 +1,273 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px)
+  .footer__nav-social li
+    margin: 0 20px 0 0
+
+  .nav-header-menu
+    margin: 0 15px
+
+  .top-line .navbar__item
+    margin: 0
+
+
+  .user-account
+    position: relative
+
+    &:after
+      position: absolute
+      bottom: 0
+      right: 3px
+
+    .icon
+      width: 30px
+      margin: 0 3px 0 0
+
+    .text
+      padding: 0
+
+      h4
+        display: none
+
+  .dropdown-menu__user
+    top: 65px
+
+  .dropdown-menu.show
+    border-radius: 0
+
+  .nav-tabs
+    padding: 0 10px
+    .nav-link
+      padding: 0 10px 16px
+
+  .balance-account
+    .btn-green
+      padding: 11.5px 35px
+    .btn-border
+      padding: 11.5px 25px
+
+  .user-information__photo
+    width: 200px
+    .photo
+      height: 240px
+      padding: 10px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px)
+  .footer-top
+    margin: 0 0 40px
+
+    .footer-box
+      margin: 0 0 20px
+
+  .user__rating-wrapper
+    flex-direction: row
+    display: flex
+    align-items: center
+    margin: 0 auto
+
+  .user__rating
+    margin: 0 0 0 10px
+
+  .navbar-collapse
+    order: 1
+    .nav-header-menu
+      margin: 0
+      border: none
+
+  .dropdown.show .dropdown-toggle
+    border-radius: 0
+
+  .top-line
+    .nav__pro
+      background: transparent
+      border-radius: 0
+    .nav-language__menu
+      background-color: #1f2532
+    .navbar-nav
+      padding: 0
+      width: 100%
+      .nav-link
+        width: 100%
+        padding: 15px 0
+        border-bottom: 1px solid rgba(#fff, .1)
+    .navbar__item
+      width: 100%
+      &:last-child
+        margin: 0
+        .nav-link
+          border: none
+    .nav-language
+      width: 100%
+      order: initial
+      .dropdown.show
+        a
+          &:after
+            border-top-color: $secondary-fgcolor
+            transform: rotate(180deg)
+      li
+        width: 100%
+        a
+          width: 100%
+          border-radius: 0
+      .nav-language__button
+        padding: 10px 15px
+        border: none
+      .dropdown-toggle::after
+        margin: 0 0 0 auto
+
+    .nav-language__menu
+      background-color: #1f2532
+      padding: 0 15px
+      .dropdown-item
+        padding: 14px 10px
+        border-bottom: 1px solid rgba(#fff, .1)
+
+  .change-password
+    margin: 0 0 31px
+
+  .social-wrapper.profile-box
+    margin: 0 0 60px
+
+  .user-information__photo
+    width: 262px
+    .photo
+      height: 262px
+
+  .section-profile .button-wrapper
+    margin: 35px auto 70px
+    padding: 0
+    border: none
+
+  .recent-operations__line
+    margin: 0 0 24px
+
+  .profile-tabs__content
+    .fade:not(.show)
+      opacity: 1
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px)
+  footer
+    padding: 33px 0
+
+  .footer__circled-age
+    margin: 0 auto 29px
+
+  .footer-top
+    margin: 0
+
+    .footer-box
+      margin: 0 0 36px
+
+  .footer-box
+    margin: 0 0 36px
+    ul
+      margin: 11px 0 0 0
+    h3
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      text-align: center
+
+
+      &:after
+        margin: 6px auto 0
+
+  .footer__nav-menu
+    text-align: center
+
+
+  .footer__nav-social
+    flex-wrap: wrap
+    justify-content: flex-start
+
+    li
+      margin: 0 32px 28px 0
+
+      &:last-child
+        margin: 0 32px 28px 0
+
+  .navbar-toggler
+    order: inherit
+    margin: 0
+
+  .user__rating-wrapper
+    margin: 0 auto
+
+  .user-account
+    margin: 0
+
+  .dropdown-menu__user
+
+    .quantity
+      margin: 0 0 0 11px
+      padding: 0 3px
+      border-radius: 3px
+
+  .user-information__photo
+    margin: 0 auto 30px
+
+  .user-information__text
+    width: 100%
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+  .balance-account
+    padding: 34px 25px 31px
+    .btn
+      width: 100%
+      max-width: 200px
+      margin: 0 auto
+    .btn-green
+      margin: 0 auto 10px
+
+  .label-wrapper
+    width: 100%
+    order: 1
+    justify-content: center
+    margin: 15px 0 0 0
+
+  .balance-account__top h3
+    margin: 0 auto
+
+  .change-password__form, .section-profile .button-wrapper
+    .btn-green
+      width: 290px
+      margin: 0 auto
+      box-shadow: 0 26px 45px 1px rgba(0, 173, 93, 0.44)
+      background: #00ad5d
+
+  .change-password__form
+    flex-direction: column
+    align-items: center
+    display: flex
+
+  .recent-operations__line, .recent-operations__top
+    justify-content: space-between
+    align-items: center
+    p, h5
+      text-align: center
+      width: auto
+      &:nth-child(1)
+        width: 100%
+        max-width: 78px
+        flex: inherit
+      &:nth-child(3)
+        width: 100%
+        max-width: 60px
+        flex: inherit
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 340px)
+  .dropdown-menu__user
+    right: -15px
+
