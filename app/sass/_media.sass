@@ -55,8 +55,66 @@
       height: 240px
       padding: 10px
 
+  .subtitle
+    font-size: 24px
+
+  .tooltip-wrapper .icon
+    width: 24px
+    height: 24px
+
+  .line-subtitle
+    .btn
+      width: 167px
+      height: 50px
+      padding: 0
+    .line-subtitle__item
+      &:nth-child(2)
+        margin: 0 20px 0 auto
+
+  .league-box
+    width: 100%
+
+  .games-tape__wrapper-line .it-center, .games-tape__wrapper-line .it-left .text, .name-winner
+    font-size: 16px
+
+  .it-center__center
+    font-size: 28px
+
+  .games-tape__wrapper-line .it-right
+    width: 170px
+    .btn
+      width: 100%
+      font-size: 16px
+      font-weight: 400
+
+  .question-wrapper__box-title .box-left, .message-user__text
+    max-width: 577px
+
+  .m-20, .it-center__center
+    margin: 0 10px
+
+  .game-statistics
+    .games-tape__wrapper
+      .it-right
+        width: 163px
+
+  .coefficient
+    font-size: 16px
+
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1050px)
+  .avatar-user
+    .avatar, .user-loc
+      display: none
+    .name
+      align-items: flex-end
+      .user-loc
+        margin: 0 0 0 10px
+
+  .avatar-user.it-center__right .name
+    align-items: flex-end
+
 @media only screen and (max-width: 991px)
   .footer-top
     margin: 0 0 40px
@@ -150,7 +208,147 @@
     .fade:not(.show)
       opacity: 1
 
-/* Small Devices, Tablets */
+  .main-counters__item
+    margin: 0 0 29px
+
+  .line-subtitle
+    margin: 59px 0 55px
+
+  .league-box
+    width: 290px
+    margin: 0 auto 57px
+    padding: 34px 19px 0
+
+  .league-wrapper
+    .container
+      max-width: 100%
+      padding: 0
+
+  .games-tape__wrapper-line
+    flex-direction: column
+    align-items: center
+    margin: 0 0 30px
+    .it-left
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      text-align: center
+      margin: -20px 0 0 0
+      .icon
+        margin: 0 auto 0
+      .text
+        text-align: center
+        justify-content: center
+        align-items: center
+        .league-name
+          margin: 7px auto 10px
+    .it-center
+      flex-direction: column
+      align-items: center
+      margin: 13px auto
+
+  .it-center__center
+    font-size: 36px
+    margin: 19px 0
+
+  .games-tape
+    margin: 60px 0
+
+
+  .games-tape__wrapper
+    height: auto
+    overflow-y: visible
+    margin: 0 0 20px
+
+  .games-tape__wrapper-line
+    display: none
+    &:nth-child(-n+7)
+      display: flex
+
+  .profile-tabs.nav-tabs .nav-link
+    color: #ffff
+    border: none
+    .active
+      color: #ffff
+      border: none
+
+  .profile-tabs.nav-tabs
+    border: none
+    &:before
+      content: ''
+      position: absolute
+      bottom: 1px
+      left: 0
+      width: 100%
+      height: 2px
+      background: #1f2532
+
+  .profile-tabs__content
+    .games-tape__wrapper
+      height: auto
+      overflow: hidden
+      border-radius: 35px
+      .avatar-user
+        .avatar
+          display: flex
+        .user-loc
+          display: flex
+        .name
+          flex-direction: row
+      .it-right
+        width: 100%
+        flex-direction: column
+        .bet-result
+          margin: 0 0 30px
+          &:last-child
+            margin: 0
+
+    .games-tape__wrapper-line
+      .it-left
+        margin: 0 auto
+
+  .it-right__wrapper
+    width: 100%
+
+  .it-right__wrapper-line
+    border: none
+    margin: 0
+
+  .technical-support
+    margin: 0
+
+  .window-dropdown
+    margin: 30px 0
+
+  .question-wrapper__box-title .box-left, .message-user__text
+    max-width: 540px
+
+  .games-tape__wrapper-line .it-right
+    width: auto
+    .btn
+      width: 252px
+
+  .bids .it-right .btn
+    width: 166px
+
+  .bids .it-center .score
+    flex-direction: column
+    align-items: center
+
+  .coefficient
+    font-size: 18px
+    margin: 29px auto 0
+
+  .games-tape__wrapper-line .it-right .btn
+    margin: 0 auto
+
+  .m-20
+    margin: 0 20px
+
+  .it-center__center
+    margin: 20px 0
+
+
 @media only screen and (max-width: 767px)
   footer
     padding: 33px 0
@@ -215,8 +413,88 @@
   .user-information__text
     width: 100%
 
+  .choose-league
+    padding: 30px 0 0
 
-/* Extra Small Devices, Phones */
+  .games-tape
+    margin: 60px 0
+
+  .line-subtitle
+    flex-direction: column
+    align-items: center
+    .line-subtitle__item
+      width: 100%
+      justify-content: space-between
+      margin: 0
+      &:nth-child(2)
+        margin: 27px 0 54px
+
+  .games-tape .line-title
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    h2
+      margin: 0 auto
+      font-size: 30px
+      span
+        font-size: 24px
+    h6
+      margin: 21px auto 30px
+
+  .technical-support .line-title
+    flex-direction: column
+    align-items: center
+    button
+      flex-direction: column
+      align-items: center
+      margin: 19px auto 0
+      .icon
+        margin: 0
+
+  .question-wrapper__box-title .box-left, .message-user__text
+    max-width: none
+
+  .message-user__text
+    margin: 11px 0 0 0
+    padding: 11px 15px 48px 8px
+
+  .message-admin
+    .message-user__text
+      margin: 11px 0 0 0
+      order: 1
+
+  .response-rating
+    padding: 0
+    
+  .question-wrapper__box-title .box-right
+    text-align: left
+    align-items: flex-start
+    margin: 30px 0 0 0
+
+  .technical-support .nav-pagination
+    margin: 30px auto 0
+
+  .question-wrapper__box-title
+    padding: 17px 36px 22px 9px
+
+@media only screen and (max-width: 576px)
+  .referral-program
+    h4, h3
+      text-align: center
+    h4
+      font-size: 16px
+      font-weight: 400
+      margin: 0 0 28px
+
+
+  .window-links
+    font-size: 18px
+    margin: 30px 0
+
+  .profile-tabs.nav-tabs .slick-slide a
+    text-align: center
+    padding: 0 0 20px
+
 @media only screen and (max-width: 480px)
   .balance-account
     padding: 34px 25px 31px
@@ -264,10 +542,51 @@
         flex: inherit
 
 
+  .line-subtitle .label-wrapper
+    order: -1
+    width: auto
+    justify-content: flex-start
+
+  .games-tape .button-group .btn
+    font-size: 16px
+    width: 130px
+
+  .referral-program__line-title
+    flex-wrap: nowrap
+
+  .referral-program__line
+    padding: 18px 12px 18px
+    .box-right, h6
+      min-width: auto
+    .box-right
+      min-width: auto
+    .avatar, .user-loc
+      display: flex
+
+    h6:last-child
+      max-width: 92px
+      text-align: right
+
+  .profile-tabs__content
+    .line-title
+      .subtitle
+        text-align: center
+
+  .modal-body .line-wrapper
+    flex-direction: column
+    align-items: center
+    .box-left
+      width: 100%
+    .box-right
+      margin: 30px auto 0
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 340px)
   .dropdown-menu__user
     right: -15px
+
+  .league-wrapper__slider
+    .slick-slide
+      padding: 0
 

@@ -174,11 +174,14 @@
 
     <div class="container">
         <ul>
-            <li><a href="index.html">Главная</a></li>
+<!--            <li><a href="index.html">Главная</a></li>-->
             <li><a href="profile.html">Профиль Treal</a></li>
             <li><a href="profile_real.html">Профиль Real</a></li>
+            <li><a href="choose-a-league.html">КНБЛ-выбор лиги-1170</a></li>
+<!--            <li><a href="profile.html">КНБЛ-статистика игр-1170</a></li>-->
         </ul>
 
+        <br>
         <br>
         <h1>Модальные окна</h1>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
@@ -186,7 +189,9 @@
             (Trial-₽)
         </button>
 
-        <br>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalEditcontacts">
+            Смена телефона или почты
+        </button>
 
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalInfo_1">
             Данные изменены
@@ -308,6 +313,34 @@
     </div>
 </div>
 
+<div class="modal fade" id="modalEditcontacts" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Редактировать данные </h5>
+            </div>
+            <div class="modal-body">
+                <form class="login-form__login change-password__form form">
+                    <div class="input-group form-group form-label-group">
+                        <input type="text" class="form-control" id="mail" placeholder=" " required="">
+                        <label for="mail" class="form-control-placeholder">gamer@gmail.com</label>
+                    </div>
+                    <div class="input-group form-group form-label-group">
+                        <input type="text" class="form-control" id="phone" placeholder=" " required="">
+                        <label for="phone" class="form-control-placeholder">+ 7 (999) 888-77-66</label>
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="btn btn-primary links-green">Сохранить</button>
+                        <button type="button" class="btn btn-secondary links-red" data-dismiss="modal">Выйти</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="modalInfo_1" tabindex="-1" role="dialog"
      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -333,8 +366,8 @@
             </div>
             <div class="modal-body">
                 <h5 class="text-center">Вам необходимо заработать<br> не менее</h5>
-                <h3 class="green text-center"> 500 <br>
-                     <span>очков рейтинга</span></h3>
+                <h3 class="green text-center"> 500</h3>
+                <span class="green text-center glasses">очков рейтинга</span>
                 <button type="button" class="btn btn-secondary links-red" data-dismiss="modal">Выйти</button>
             </div>
 

@@ -2,6 +2,9 @@
 .navbar-dark .navbar-nav .nav-link
   color: #fff
 
+.navbar-dark .navbar-brand
+  padding: 0 0 0 38px
+
 .top-line
   background-color: #1f2532
   color: #fff
@@ -131,7 +134,7 @@
 .main-content
   background-color: $bg
   color: $body-fgcolor
-  overflow: auto
+  overflow-x: hidden
   width: 100%
 
 .home-main
@@ -560,9 +563,6 @@ footer
     bottom: 21px
 
 
-.section-profile
-  padding: 70px 0 0
-
 .nav-tabs
   border-bottom: 2px solid $footer
   padding: 0 69px
@@ -626,8 +626,9 @@ footer
           color: $secondary-fgcolor
 
 .section-profile
+  padding: 70px 0 120px
   .button-wrapper
-    margin: 29px auto 121px
+    margin: 29px auto 0
     padding: 29px 0 0 0
     border-top: 2px solid $footer
 
@@ -748,37 +749,52 @@ footer
     span
       font-weight: 600
 
+.slick-slide
+  outline: none
+
 
 .profile-tabs.nav-tabs
-  border: none
-  &:before
-    content: ''
-    position: absolute
-    bottom: 1px
-    left: 0
-    width: 100%
-    height: 2px
-    background: #1f2532
+  .slick-arrow
+    top: 30%
+
   .slick-slide
     margin: 0
     a
       width: fit-content
       margin: 0 auto
       padding: 0 24px 15px
-      border:
-        bottom: 4px solid transparent
-
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        background: transparent
+        height: 4px
+        width: 135px
+        left: 50%
+        bottom: 0
+        transform: translate(-50%,0)
   .slick-active
     a
-      border-color: #00ad5d
       color: #00ad5d
+      &:before
+        background: #00ad5d
 
-.profile-tabs.nav-tabs .nav-link
-  color: #ffff
-  border: none
-  .active
-    color: #ffff
-    border: none
+.profile-tabs__content
+  width: 100%
+  .games-tape__wrapper
+    border-radius: 35px
+    background-color: #1f2532
+    height: 520px
+    .games-tape__wrapper-line
+      border-bottom: 1px solid #444d68
+      margin: 0
+      border-radius: 0
+      padding: 20px 10px 22px 19px
+      &:last-child
+        border: none
+  .subtitle
+    font-size: 24px
+    font-weight: 500
 
 .slick-slider
   width: 100%
@@ -805,3 +821,268 @@ footer
 
 .slick-next
   right: 0
+
+.bet-result
+  display: flex
+  flex-direction: column
+  align-items: center
+
+//referral-program
+.referral-program
+  h4
+    font-size: 18px
+    font-weight: 500
+    margin: 0 0 59px
+
+.window-links
+  width: 100%
+  margin: 26px 0 30px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  border-radius: 25px
+  background-color: #1f2532
+  padding: 21px 26px 19px 21px
+  font-size: 24px
+  font-weight: 500
+  color: $secondary-fgcolor
+
+.window-dropdown
+  margin: 26px 0 57px
+  border-radius: 15px
+  background-color: #1f2532
+  font-size: 18px
+  font-weight: 500
+  .dropdown-menu
+    background-color: #1f2532
+    .dropdown-item
+      padding: 12px 20px
+      font-size: 18px
+      font-weight: 500
+  .dropdown-menu.show
+    border-radius: 5px
+
+.window-dropdown.show
+  border-radius: 15px 15px 5px 5px
+  .dropdown-toggle
+    border-radius: 15px 15px 5px 5px
+
+
+.nav-question__button
+  background: transparent
+  border-radius: 0
+  padding: 15px 20px
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &:after
+    border-top-color: $secondary-fgcolor
+    margin: 0 0 0 auto
+  &:hover
+    color: #fff
+
+.referral-program__list
+  border-radius: 25px
+  background-color: #1f2532
+
+.referral-program__line
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  border-bottom: 1px solid #444d68
+  padding: 16.5px 18px 16.5px 22px
+  font-size: 18px
+  font-weight: 500
+  .box-right, h6
+    min-width: 175px
+    text-align: center
+
+.referral-program__line-title
+  border: none
+
+//technical-support
+.technical-support
+  margin: 70px 0 0
+  .line-title
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  .nav-pagination
+    margin: 68px auto 0
+
+//question-wrapper
+.question-wrapper
+  width: 100%
+
+.question-wrapper__box
+  border-radius: 25px
+  margin: 0 0 10px
+  &:last-child
+    margin: 0
+
+.question-wrapper__box-title
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 16px 26px 21px 21px
+  box-sizing: border-box
+  font-weight: 500
+  font-size: 18px
+  p, .date
+    font-size: 16px
+    font-weight: 400
+  .box-left
+    max-width: 778px
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    h5
+      margin: 0 0 10px
+  .box-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-end
+
+.message-user
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 20px
+
+.message-admin
+  justify-content: flex-end
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 14px
+  .avatar
+    width: 34px
+    height: 34px
+    background-color: #00ad5d
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 24px
+    text-transform: uppercase
+  .message-user__text
+    margin: 0 12px 0 0
+    text-align: right
+    a
+      display: inline-block
+
+
+.message-user__text
+  max-width: 777px
+  width: 100%
+  margin: 0 0 0 15px
+  padding: 11px 38px 9px 20px
+  border-radius: 15px
+  background-color: #00404d
+
+.window-message
+  border-top: 1px solid #444d68
+  padding: 20px 28px 31px 23px
+
+.response-rating
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: flex-end
+  font-size: 16px
+  font-weight: 400
+  padding: 0 46px 0 0
+
+.list-rating
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 0 19px
+  li
+    margin: 0 0 0 15px
+    &:first-child
+      margin: 0
+
+
+.new-message
+  margin: 47px auto 0
+  max-width: 946px
+  width: 100%
+  label
+    width: 100%
+    padding: 0
+    height: auto
+  textarea
+    width: 100%
+    background-color: #00404d
+    height: 150px
+    border-radius: 15px
+    color: #ffffff
+    padding: 10px 18px
+    font-size: 16px
+    font-family: 'Montserrat', sans-serif
+    border: none
+    &::placeholder
+      color: #fff
+  button
+    margin: 30px auto 0
+    width: 166px
+    padding: 0
+    height: 50px
+    font-size: 16px
+    font-weight: 500
+
+.list-upload
+  li
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 18px
+    max-width: 105px
+    width: 100%
+    &:last-child
+      margin: 0
+    .icon-del
+      display: inline-block
+
+#modalTiket
+  .modal-dialog
+    max-width: 1140px
+  .modal-title
+    font-size: 24px
+
+
+.bids
+  .it-right
+    width: 210px
+    .btn
+      margin: 5px auto 0
+      width: 166px
+      font-size: 16px
+      font-weight: 400
+      height: 30px
+  .it-center
+    flex-direction: column
+    align-items: center
+    .score
+      display: flex
+      align-items: center
+  .games-tape__wrapper
+    height: 578px
+    .games-tape__wrapper-line
+      padding: 11px 10px 11px 19px
+
+.game-statistics
+  .games-tape__wrapper
+    .it-right
+      width: 200px

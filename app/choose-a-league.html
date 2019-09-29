@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>KNBL</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<!-- Header inside body -->
+<header class="top-line">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-login" href="http://knbl.pro/login.html">
+                        <img src="img/enter.png" alt="">
+                    </a>
+                    <a class="navbar-brand d-none d-md-flex" href="index.html">
+                        <img src="img/logo_header.svg" alt="Logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMainMenu"
+                            aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarMainMenu">
+                        <div class="line d-flex d-lg-none">
+                            <h3>Меню</h3>
+                            <div class="btn-close"><img src="img/exit.png" alt=""></div>
+                        </div>
+
+                        <ul class="navbar-nav nav-language">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle nav-language__button" href="index.html#"
+                                   id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <img src="img/flag_ru_small.png" alt="">
+                                    <span class="text">RU</span>
+                                </a>
+                                <div class="dropdown-menu nav-language__menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="index.html#"><img src="img/flag_ru_big.png" alt="">&nbsp;RU</a>
+                                    <a class="dropdown-item" href="index.html#"><img src="img/flag_us_big.png" alt="">&nbsp;EN</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav nav-header-menu">
+                            <li class="nav-item navbar__item active">
+                                <a class="nav-link" href="index.html#">Правила <span
+                                      class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item navbar__item">
+                                <a class="nav-link" href="index.html#">Рейтинг</a>
+                            </li>
+                            <li class="nav-item navbar__item">
+                                <a class="nav-link" href="index.html#">Турниры</a>
+                            </li>
+                            <li class="nav-item navbar__item">
+                                <a class="nav-link nav__pro" href="index.html#">PRO</a>
+                            </li>
+                        </ul>
+
+
+                    </div><!-- /.collapse -->
+
+
+                    <div class="user__rating-wrapper d-none d-sm-flex">
+                        <div class="money-user">
+                            <div class="account-rate">
+                                T
+                            </div>
+                            <h4 class="the-sum">999 999 ₽</h4>
+                        </div>
+
+                        <div class="user__rating">
+                            <div class="icon"><img src="img/pro-league-top.png" alt=""></div>
+                            <h4>127 432</h4>
+                        </div>
+                    </div>
+
+                          <!--  user-rating mobile-->
+                    <div class="user__rating-wrapper d-flex d-sm-none">
+                        <div class="money-user">
+                            <div class="account-rate">
+                                T
+                            </div>
+                            <h4 class="the-sum">99К ₽</h4>
+                        </div>
+
+                        <div class="user__rating">
+                            <div class="icon"><img src="img/pro-league-top.png" alt=""></div>
+                            <h4>127К</h4>
+                        </div>
+                    </div><!-- user-rating mobile-->
+
+                    <div class="user-account dropdown">
+                        <div class="icon"><img src="img/login_top.png" alt=""></div>
+                        <div class="text dropdown-toggle" data-toggle="dropdown" id="userDropdown">
+                            <h4>Administrator</h4>
+                            <div class="icon-flag"><img src="img/flag_ru_big.png" alt=""></div>
+                        </div>
+
+                        <div class="dropdown-menu dropdown-menu__user" aria-labelledby="userDropdown">
+                            <div class="btn-close"><img src="img/exit.png" alt=""></div>
+
+                            <a href="#" class="dropdown-item">
+                                <span class="icon"><img src="img/home.png" alt=""></span>
+                                <span class="text">Личный кабинет</span>
+                            </a>
+
+                            <a href="#" class="dropdown-item d-flex d-md-none">
+                                <span class="icon"><img src="img/contacts/mail_green.png" alt=""></span>
+                                <span class="text">Личные сообщения</span>
+                                <span class="quantity bg-red">9</span>
+                            </a>
+
+                            <a href="#" class="dropdown-item d-flex d-md-none">
+                                <span class="icon green">+</span>
+                                <span class="text">Пополнить счет</span>
+                            </a>
+
+                            <a href="#" class="dropdown-item d-flex d-md-none">
+                                <span class="icon red">-</span>
+                                <span class="text">Вывести средства</span>
+                            </a>
+
+                            <a href="#" class="dropdown-item">
+                                <span class="icon"><img src="img/enter.png" alt=""></span>
+                                <span class="text">Выйти</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="fixed-tabs__menu d-none d-md-flex">
+                    <a href="#" class="main-mail"><img src="img/contacts/mail.png" alt="">
+                        <span class="icon"></span>
+                    </a>
+                    <a href="#" class="replenish-account">Пополнить счет</a>
+                    <a href="#" class="withdraw">Вывести </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- the content -->
+<main class="main-content">
+
+    <div class="choose-league">
+        <div class="container">
+
+            <div class="main-counters row">
+                <div class="col-12 col-md-6 col-lg-4 main-counters__item">
+                    <div class="main-counters__label">
+                        Игр сегодня
+                    </div>
+                    <div class="main-counters__number green">
+                        3254544
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 main-counters__item">
+                    <div class="main-counters__label">
+                        Игроков онлайн
+                    </div>
+                    <div class="main-counters__number green">
+                        1621
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 main-counters__item">
+                    <div class="main-counters__label">
+                        Выиграно сегодня
+                    </div>
+                    <div class="main-counters__number green">
+                        22582
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="line-subtitle">
+        <div class="container">
+            <div class="row col-12">
+                <div class="line-subtitle__item">
+                    <h2 class="subtitle">Выберите лигу</h2>
+
+                    <div class="tooltip-wrapper">
+                        <div class="icon"><img src="img/question.png" alt=""></div>
+
+                        <div class="tooltip">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                               ut
+                               labore et dolore magna aliqua. Quis ipsum </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-subtitle__item">
+
+                    <div class="label-wrapper">
+
+                        <label class="checkbox-slider">
+                            <span class="account-rate account-rate__real">R</span>
+                            <span class="checkbox__text">Real</span>
+                            <input type="checkbox" class="check-input" name="checkbox">
+                            <span class="checkbox-anim"></span>
+                            <span class="checkbox__text d-none d-lg-flex">Trial</span>
+                            <span class="account-rate d-none d-lg-flex">T</span>
+                        </label>
+
+                    </div>
+
+                    <div class="tooltip-wrapper">
+                        <div class="icon"><img src="img/question.png" alt=""></div>
+
+                        <div class="tooltip">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                               ut
+                               labore et dolore magna aliqua. Quis ipsum </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-primary btn-green">Турниры</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="league-wrapper">
+        <div class="container">
+            <div class="row league-wrapper__slider">
+                <div class="col-12 col-lg-4">
+                    <div class="league-box">
+                        <div class="league-box__title color-bronze">Бронзовая лига</div>
+                        <div class="league-box__image">
+                            <div class="img"><img src="img/figures/bronze.svg" alt=""></div>
+                            <div class="img"><img src="img/figures/bronze_f.svg" alt=""></div>
+                        </div>
+                        <div class="league-box__bottom-line">
+                            <div class="it">1₽</div>
+                            <div class="it">
+                                <p>1</p>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="it">
+                                <div class="icon"><img src="img/figures/pro-league_white.png" alt=""></div>
+                                <p>20</p>
+                            </div>
+                        </div>
+                        <div class="quantity-online">
+                            <p>Онлайн 9999</p>
+                        </div>
+
+                        <a href="#" class="btn btn-primary btn-accent">Начать игру</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="league-box">
+                        <div class="league-box__title color-silver">Серебряная лига</div>
+                        <div class="league-box__image">
+                            <div class="img"><img src="img/figures/silver.svg" alt=""></div>
+                            <div class="img"><img src="img/figures/silver_f.svg" alt=""></div>
+                        </div>
+                        <div class="league-box__bottom-line">
+                            <div class="it">5₽</div>
+                            <div class="it">
+                                <p>3</p>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="it">
+                                <div class="icon"><img src="img/figures/pro-league_white.png" alt=""></div>
+                                <p>40</p>
+                            </div>
+                        </div>
+                        <div class="quantity-online">
+                            <p>Онлайн 9999</p>
+                        </div>
+
+                        <a href="#" class="btn btn-primary btn-accent">Начать игру</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="league-box">
+                        <div class="league-box__title color-gold">Золотая лига</div>
+                        <div class="league-box__image">
+                            <div class="img"><img src="img/figures/gold.svg" alt=""></div>
+                            <div class="img"><img src="img/figures/gold_f.svg" alt=""></div>
+                        </div>
+                        <div class="league-box__bottom-line">
+                            <div class="it">10₽</div>
+                            <div class="it">
+                                <p>3</p>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="it">
+                                <div class="icon"><img src="img/figures/pro-league_white.png" alt=""></div>
+                                <p>60</p>
+                            </div>
+                        </div>
+                        <div class="quantity-online">
+                            <p>Онлайн 9999</p>
+                        </div>
+
+                        <a href="#" class="btn btn-primary btn-accent">Начать игру</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="league-box">
+                        <div class="league-box__title color-platinum">Платиновая лига</div>
+                        <div class="league-box__image">
+                            <div class="img"><img src="img/figures/platinum.svg" alt=""></div>
+                            <div class="img"><img src="img/figures/platinum_f.svg" alt=""></div>
+                        </div>
+                        <div class="league-box__bottom-line">
+                            <div class="it">25₽</div>
+                            <div class="it">
+                                <p>5</p>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="it">
+                                <div class="icon"><img src="img/figures/pro-league_white.png" alt=""></div>
+                                <p>80</p>
+                            </div>
+                        </div>
+                        <div class="quantity-online">
+                            <p>Онлайн 9999</p>
+                        </div>
+
+                        <a href="#" class="btn btn-primary btn-accent">Начать игру</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="league-box">
+                        <div class="league-box__title color-diamond">Бриллиантовая лига</div>
+                        <div class="league-box__image">
+                            <div class="img"><img src="img/figures/diamond.svg" alt=""></div>
+                            <div class="img"><img src="img/figures/diamond_f.svg" alt=""></div>
+                        </div>
+                        <div class="league-box__bottom-line">
+                            <div class="it">50₽</div>
+                            <div class="it">
+                                <p>7</p>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="it">
+                                <div class="icon"><img src="img/figures/pro-league_white.png" alt=""></div>
+                                <p>100</p>
+                            </div>
+                        </div>
+                        <div class="quantity-online">
+                            <p>Онлайн 9999</p>
+                        </div>
+
+                        <a href="#" class="btn btn-primary btn-accent">Начать игру</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="league-box league-box__pro">
+
+                        <div class="pro-icon">
+                            <img src="img/figures/pro_f_grey.png" alt="">
+                            <span>500</span>
+                        </div>
+                        <div class="league-box__title color-pro">PRO лига</div>
+                        <div class="league-box__image">
+                            <div class="img"><img src="img/figures/stars.png" alt=""></div>
+                            <div class="img"><img src="img/figures/pro-league.svg" alt=""></div>
+                            <div class="img"><img src="img/figures/pro_f.svg" alt=""></div>
+                        </div>
+                        <div class="league-box__bottom-line">
+                            <div class="it">100₽</div>
+                            <div class="it">
+                                <p>3</p>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="it">
+                                <div class="icon"><img src="img/figures/pro-league_white.png" alt=""></div>
+                                <p>200</p>
+                            </div>
+                        </div>
+                        <div class="quantity-online">
+                            <p>Онлайн 9999</p>
+                        </div>
+
+                        <a href="#" class="btn btn-primary btn-accent">Начать игру</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="games-tape">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="line-title">
+                        <h2>Life Лента игр
+                            <span class="green">Игр онлайн - <strong>32 344 </strong></span></h2>
+
+                        <h6 class="d-flex d-md-none">Играйте или следите за игрой в качестве наблюдателя и делайте ставки</h6>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-primary btn-accent">Все игры</a>
+                            <a href="#" class="btn btn-primary btn-border">Мои ставки</a>
+                        </div>
+                    </div>
+                    <h6 class="d-none d-md-flex text">Играйте или следите за игрой в качестве наблюдателя и делайте ставки</h6>
+
+                </div>
+
+                <div class="col-12">
+                    <div class="games-tape__wrapper main-scroll">
+
+                        <div class="games-tape__wrapper-line bg-dark__blue">
+                            <div class="it-left">
+                                <div class="icon"><img src="img/figures/bronze.svg" alt=""></div>
+                                <div class="text">
+                                    <div class="league-name color-bronze">Бронзовая лига</div>
+                                    <div class="league-number">#415236</div>
+                                </div>
+                            </div>
+
+                            <div class="it-center">
+                                <div class="it-center__left avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="it-center__center green">
+                                    <div class="vs">VS</div>
+                                </div>
+
+                                <div class="it-center__right avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="it-right">
+                                <a href="#" class="btn btn-primary btn-green_2">Следить за игрой</a>
+                            </div>
+                        </div>
+
+                        <div class="games-tape__wrapper-line bg-dark__blue">
+                            <div class="it-left">
+                                <div class="icon"><img src="img/figures/bronze.svg" alt=""></div>
+                                <div class="text">
+                                    <div class="league-name color-bronze">Бронзовая лига</div>
+                                    <div class="league-number">#415236</div>
+                                </div>
+                            </div>
+
+                            <div class="it-center">
+                                <div class="it-center__left avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="it-center__center green">
+                                    <div class="number">2</div>
+                                    <div class="vs m-20">VS</div>
+                                    <div class="number">2</div>
+                                </div>
+
+                                <div class="it-center__right avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="it-right">
+                                <a href="#" class="btn btn-primary btn-green_2">Следить за игрой</a>
+                            </div>
+                        </div>
+
+                        <div class="games-tape__wrapper-line bg-dark__blue">
+                            <div class="it-left">
+                                <div class="icon"><img src="img/figures/bronze.svg" alt=""></div>
+                                <div class="text">
+                                    <div class="league-name color-bronze">Бронзовая лига</div>
+                                    <div class="league-number">#415236</div>
+                                </div>
+                            </div>
+
+                            <div class="it-center">
+                                <div class="it-center__left avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="it-center__center green">
+                                    <div class="number">2</div>
+                                    <div class="vs m-20">VS</div>
+                                    <div class="number">3</div>
+                                </div>
+
+                                <div class="it-center__right avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="it-right">
+                                <div class="name-winner">
+                                    <p>Победитель - <span class="green">Игрок №2</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="games-tape__wrapper-line bg-green">
+                            <div class="it-left">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <div class="league-name color-pro">Dayly Big Tournament</div>
+                                    <div class="league-number">Начало: 14:00 (МСК)</div>
+                                </div>
+                            </div>
+
+                            <div class="it-center">
+                                <div class="it-center__left">
+                                    <div class="rate">
+                                        Ставка <span class="green">100₽</span>
+                                    </div>
+                                </div>
+
+                                <div class="it-center__center green">
+                                    <div class="the-participants">
+                                        Участников <span class="green">12/100</span>
+                                    </div>
+                                </div>
+
+                                <div class="it-center__right">
+                                    <div class="status">
+                                        Для <span class="pro-it">PRO</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="it-right">
+                                <a href="#" class="btn btn-primary btn-green_2">Участвовать</a>
+                            </div>
+                        </div>
+                        <div class="games-tape__wrapper-line bg-green">
+                            <div class="it-left">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <div class="league-name color-pro">Dayly Big Tournament</div>
+                                    <div class="league-number">Стол #47</div>
+                                </div>
+                            </div>
+
+                            <div class="it-center">
+                                <div class="it-center__left avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="it-center__center green">
+                                    <div class="vs">VS</div>
+                                </div>
+
+                                <div class="it-center__right avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="it-right">
+                                <a href="#" class="btn btn-primary btn-green_2">Следить за игрой</a>
+                            </div>
+                        </div>
+                        <div class="games-tape__wrapper-line bg-green">
+                            <div class="it-left">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <div class="league-name color-pro">Dayly Big Tournament</div>
+                                    <div class="league-number">Стол #47</div>
+                                </div>
+                            </div>
+
+                            <div class="it-center">
+                                <div class="it-center__left avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="it-center__center green">
+                                    <div class="number">2</div>
+                                    <div class="vs m-20">VS</div>
+                                    <div class="number">2</div>
+                                </div>
+
+                                <div class="it-center__right avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="it-right">
+                                <a href="#" class="btn btn-primary btn-green_2">Следить за игрой</a>
+                            </div>
+                        </div>
+                        <div class="games-tape__wrapper-line bg-green">
+                            <div class="it-left">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <div class="league-name color-pro">Dayly Big Tournament</div>
+                                    <div class="league-number">Стол #47</div>
+                                </div>
+                            </div>
+
+                            <div class="it-center">
+                                <div class="it-center__left avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="it-center__center green">
+                                    <div class="number">2</div>
+                                    <div class="vs m-20">VS</div>
+                                    <div class="number">3</div>
+                                </div>
+
+                                <div class="it-center__right avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="it-right">
+                                <div class="name-winner">
+                                    <p>Победитель - <span class="green">Игрок №2</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="games-tape__wrapper-line bg-green">
+                            <div class="it-left">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <div class="league-name color-pro">Dayly Big Tournament</div>
+                                    <div class="league-number">Начало: 14:00 (МСК)</div>
+                                </div>
+                            </div>
+
+                            <div class="it-center">
+                                <div class="it-center__left">
+                                    <div class="rate">
+                                        Ставка <span class="green">100₽</span>
+                                    </div>
+                                </div>
+
+                                <div class="it-center__center green">
+                                    <div class="the-participants">
+                                        Участников <span class="green">12/100</span>
+                                    </div>
+                                </div>
+
+                                <div class="it-center__right">
+                                    <div class="status">
+                                        Для <span class="pro-it">PRO</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="it-right">
+                                <a href="#" class="btn btn-primary btn-green_2">Участвовать</a>
+                            </div>
+                        </div>
+                        <div class="games-tape__wrapper-line bg-green">
+                            <div class="it-left">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <div class="league-name color-pro">Dayly Big Tournament</div>
+                                    <div class="league-number">Стол #47</div>
+                                </div>
+                            </div>
+
+                            <div class="it-center">
+                                <div class="it-center__left avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="it-center__center green">
+                                    <div class="vs">VS</div>
+                                </div>
+
+                                <div class="it-center__right avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="it-right">
+                                <a href="#" class="btn btn-primary btn-green_2">Следить за игрой</a>
+                            </div>
+                        </div>
+                        <div class="games-tape__wrapper-line bg-green">
+                            <div class="it-left">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <div class="league-name color-pro">Dayly Big Tournament</div>
+                                    <div class="league-number">Стол #47</div>
+                                </div>
+                            </div>
+
+                            <div class="it-center">
+                                <div class="it-center__left avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="it-center__center green">
+                                    <div class="number">2</div>
+                                    <div class="vs m-20">VS</div>
+                                    <div class="number">2</div>
+                                </div>
+
+                                <div class="it-center__right avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="it-right">
+                                <a href="#" class="btn btn-primary btn-green_2">Следить за игрой</a>
+                            </div>
+                        </div>
+                        <div class="games-tape__wrapper-line bg-green">
+                            <div class="it-left">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 217.84">
+                                        <g>
+                                            <g>
+                                                <path class="cls-1"
+                                                      d="M121.5,96.63C187.89,90.12,184.26,0,184.26,0L153.84,6.89l-1.35-5.36L31.76,1.15,30.42,6.89,0,0C2.2,97,64.1,97.2,64.1,97.2c5,4.4,24.1,13.21,24.1,13.21v59.12l-31.76-.19-.19,11.86L41.13,181l.39,36.83H142.93V181.2H127.81l-.19-11.86H95.29l.76-59.13C103.32,109.06,121.5,96.63,121.5,96.63Zm32.91-82.08,22.77-5.27s-1.34,67.64-47.07,79.12C130.11,88.4,155.17,64.86,154.41,14.55ZM7.84,9.28l22.1,5.07S27,59.51,54.15,88.4C54.15,88.4,10.33,81.32,7.84,9.28Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <div class="league-name color-pro">Dayly Big Tournament</div>
+                                    <div class="league-number">Стол #47</div>
+                                </div>
+                            </div>
+
+                            <div class="it-center">
+                                <div class="it-center__left avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="it-center__center green">
+                                    <div class="number">2</div>
+                                    <div class="vs m-20">VS</div>
+                                    <div class="number">3</div>
+                                </div>
+
+                                <div class="it-center__right avatar-user">
+                                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                                    <div class="name">
+                                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="it-right">
+                                <div class="name-winner">
+                                    <p>Победитель - <span class="green">Игрок №2</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <a href="#" class="btn load-more">
+                        <span class="text">Показать еще</span>
+                        <span class="icon"><img src="img/arrow_bot_green.png" alt=""></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</main>
+<!-- the content -->
+
+
+<!-- footer -->
+<footer class="bottom-line">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-lg-4 col-md-6 col-12 d-flex d-lg-none">
+                <div class="footer__circled-age">
+                    <img src="img/18+.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 footer-box">
+                <h3>Навигация</h3>
+                <ul class="footer__nav-menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Правила</a></li>
+                    <li><a href="#">Рейтинг</a></li>
+                    <li><a href="#">Турниры</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 footer-box">
+                <h3>О нас</h3>
+                <ul class="footer__nav-menu">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Сотрудничество</a></li>
+                    <li><a href="#">Реферальная программа</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 footer-box">
+                <h3>Соглашения</h3>
+                <ul class="footer__nav-menu">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li>2019 &copy; KNBL</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+            <div class="col-xl-4 col-lg-4 col-12 d-none d-lg-flex">
+                <div class="footer__circled-age">
+                    <img src="img/18+.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12 footer-box">
+                <h3>Платежные системы</h3>
+                <ul class="footer__nav-menu footer__nav-social">
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/visa.png"/></li>
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/mastercard.png"/></li>
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/paypal.png"/></li>
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/webmoney.png"/></li>
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/yandex-money.png"/></li>
+                </ul>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12 footer-box">
+                <h3>Присоединяйтесь к нам</h3>
+                <ul class="footer__nav-menu footer__nav-social">
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/vk.png"/></a></li>
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/telegram.png"/></a>
+                    </li>
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/instagram.png"/></a>
+                    </li>
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/facebook.png"/></a>
+                    </li>
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/youtube.png"/></a>
+                    </li>
+                    <li>
+                        <a href="#"> <img class="footer__pictogram-button" alt="" src="img/contacts/discord.png"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

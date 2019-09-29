@@ -67,6 +67,8 @@ body
   position: relative
   line-height: normal
   font-family: $default-font
+
+//html, body
   overflow-x: hidden
 
 img
@@ -76,13 +78,18 @@ img
 
 .text-center
   text-align: center
+  
+.text-left
+  text-align: left
 
 a
   display: block
   text-decoration: none
   transition: .3s ease
 
-  &:hover
+  &:hover, &:focus
+    box-shadow: none
+    outline: none
     text-decoration: none
 
 input, select, textarea, .form-control
@@ -123,6 +130,11 @@ button, .btn-primary, .btn-secondary
     border: none
     background: transparent
 
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+
 .btn-green
   color: #fff
   background: linear-gradient(to right, #00ce6f 0%, #00934e 99%, #00924e 100%)
@@ -147,6 +159,22 @@ button, .btn-primary, .btn-secondary
     box-shadow: 0 26px 45px 1px rgba(0, 173, 93, 0.44)
     background-color: $secondary-fgcolor
 
+.btn-accent
+  box-shadow: 0 26px 45px 1px rgba(0, 173, 93, 0.44)
+  background-color: #00ad5d
+  border-radius: 25px
+  border: 1px solid #00ad5d
+  font-size: 18px
+  font-weight: 500
+  height: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  &:hover
+    border: 1px solid #00ad5d
+    background-color: #00ad5d
+    box-shadow: 0 26px 45px 1px rgba(0, 173, 93, 0.44)
+
 .links-red
   padding: 0
   color: $red
@@ -155,6 +183,14 @@ button, .btn-primary, .btn-secondary
   text-align: center
   background: transparent
   border: none
+
+.links-green
+  padding: 0
+  height: auto
+  color: $secondary-fgcolor
+  &:hover
+    color: #fff
+
 
 .button-wrapper
   width: 100%
@@ -206,6 +242,29 @@ button, .btn-primary, .btn-secondary
     box-shadow: 0 14px 45px 1px rgba(0, 173, 93, 0.44)
     background-color: $secondary-fgcolor
     border: 1px solid $secondary-fgcolor
+
+.load-more
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  text-align: center
+  border: none
+  color: #ffffff
+  font-size: 18px
+  padding: 0
+  .icon
+    border: 1px solid #00ad5d
+      radius: 50%
+    width: 52px
+    height: 52px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 21px auto 0
+  &:hover
+    color: #00ad5d
+
 
 
 .form
@@ -325,10 +384,131 @@ a.white
 .bg-red
   background-color: #f24841
 
+.section-padding
+  padding: 90px 0 120px
+
+.subtitle
+  font-size: 36px
+  font-weight: 700
+
+.tooltip-wrapper
+  position: relative
+  .icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 34px
+    height: 34px
+    cursor: pointer
+    img
+      width: 100%
+  &:hover
+    .tooltip
+      opacity: 1
+      pointer-events: auto
+
+.tooltip
+  position: absolute
+  left: calc(100% + 10px)
+  top: 50%
+  transform: translate(0,-50%)
+  background-color: #1f2532
+  width: 263px
+  height: 112px
+  padding: 13px 16px
+  color: #cccccc
+  font-size: 14px
+  letter-spacing: 1.12px
+  font-weight: 300
+  z-index: 2
+  font-family: 'Montserrat', sans-serif
+  line-height: 14px
+  pointer-events: none
+
+.color-bronze
+  color: #df7a1a
+
+.color-silver
+  color: #9da2b1
+
+.color-gold
+  color: #fac531
+
+.color-platinum
+  color: #72abd7
+
+.color-diamond
+  color: #00b7dd
+
+.color-pro
+  color: #1aa449
+
+.bg-green
+  background-color: #002b34
+
+.bg-dark__blue
+  background-color: #1f2532
+
+.m-20
+  margin: 0 20px
+
+.fw500
+  font-weight: 500
+
+.pagination
+  .page-item
+    margin: 0 2px
+    &:first-child, &:last-child
+      .page-link
+        color: $secondary-fgcolor
+    .page-link
+      padding: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      border: none
+        radius: 50%
+      width: 36px
+      height: 36px
+      background-color: #1f2532
+      color: #fff
+      font-size: 18px
+      font-weight: 500
+      outline: none
+      &:hover, &:focus
+        outline: none
+        box-shadow: none
+  .active
+    .page-link
+      background-color: #002b34
+
+//file input
+.custom-file-upload
+  position: relative
+  cursor: pointer
+  input
+    position: absolute
+    opacity: 0
+    visibility: hidden
+    width: 0
+    height: 0
+  .custom-file-upload__text
+    font-size: 18px
+    font-weight: 500
+    color: $secondary-fgcolor
+    .a-plus
+      margin: 0 0 0 20px
 
 
+//.container, .col-12
+//  padding-left: 10px
+//  padding-right: 10px
+//
+//.row
+//  margin-left: -10px
+//  margin-right: -10px
 
-
+@import "league"
 @import "modal"
 @import "profille"
 @import "media"

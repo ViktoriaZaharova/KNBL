@@ -1,0 +1,366 @@
+//choose-league
+.choose-league
+  padding: 90px 0 0
+
+.league-wrapper
+  overflow-x: hidden
+  width: 100%
+
+//game-stats
+.main-counters__item
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+
+
+.main-counters__label
+  font-size: 18px
+  margin: 0 0 20px
+
+.main-counters__number
+  font-size: 36px
+  font-weight: 700
+  letter-spacing: 2.88px
+
+//line-subtitle
+.line-subtitle
+  margin: 120px 0 149px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: center
+  .label-wrapper
+    margin: 0 31px 0 0
+  h2
+    margin: 0 31px 0 0
+  .line-subtitle__item
+    display: flex
+    align-items: center
+    &:nth-child(2)
+      margin: 0 55px 0 auto
+
+
+//league-box
+.league-box
+  width: 362px
+  height: 362px
+  box-shadow: 0 20px 24px 1px rgba(0, 0, 0, 0.1)
+  border-radius: 25px
+  border: 2px solid #485576
+  background-image: linear-gradient(to right, #2b3346 0%, #242b39 100%)
+  position: relative
+  padding: 32px 33px 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 0 0 46px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    box-shadow: 0 20px 24px 1px rgba(0, 0, 0, 0.1)
+    background-color: #000000
+    opacity: 0
+    visibility: hidden
+    border-radius: 25px
+    //border: 2px solid #485576
+    transition: .3s ease
+  .btn
+    position: absolute
+    left: 50%
+    top: 50%
+    z-index: 2
+    transform: translate(-50%,-50%)
+    width: 271px
+    opacity: 0
+    visibility: hidden
+    transition: .3s ease
+
+  &:hover
+    &:before
+      opacity: .8
+      visibility: visible
+    .btn
+      opacity: 1
+      visibility: visible
+  .pro-icon
+    position: absolute
+    top: 32px
+    right: 32px
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-size: 24px
+    color: #444d68
+    img
+      width: 40px
+
+
+.league-box__pro
+  .league-box__image
+    margin: 0 auto 28px
+    .img
+      &:first-child
+        width: 80px
+
+
+
+
+.quantity-online
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 17px
+  border: 2px solid #485576
+  background-color: #2b3346
+  padding: 5px 26px
+  margin: 12px auto -15px
+  box-sizing: border-box
+  position: relative
+  z-index: 2
+
+.league-box__title
+  text-align: center
+  font-size: 18px
+  font-weight: 600
+  position: relative
+  z-index: 2
+
+.league-box__image
+  margin: 30px auto
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+  .img
+    width: 100px
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
+
+.league-box__bottom-line
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+  font-size: 24px
+  color: #fff
+  svg
+    fill: #fff
+    width: 24px
+    margin: 0 0 0 11px
+  .it
+    display: flex
+    align-items: center
+  .icon
+    margin: 0 5px 0 0
+
+
+//games-tape
+.games-tape
+  margin: 84px 0 120px
+  h6
+    width: 100%
+    text-align: center
+    font-size: 18px
+    margin: 0 0 88px
+    align-items: center
+    justify-content: center
+  .line-title
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 41px
+
+  h2
+    margin: 0 91px 0 auto
+    font-size: 36px
+    font-weight: bold
+    text-align: center
+    span
+      display: block
+      font-weight: 400
+      font-size: 24px
+      strong
+        font-weight: bold
+  .button-group
+    display: flex
+    align-items: center
+    .btn
+      width: 167px
+      height: 50px
+      padding: 0
+      display: flex
+      align-items: center
+      justify-content: center
+    .btn-border
+      color: #fff
+      margin: 0 0 0 10px
+  .load-more
+    margin: 0 auto
+
+
+.games-tape__wrapper
+  width: 100%
+  margin: 0 0 58px
+  height: 548px
+  overflow-y: scroll
+
+.games-tape__wrapper-line
+  margin: 0 0 10px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  border-radius: 35px
+  padding: 10px 9px 10px 19px
+  .it-left
+    display: flex
+    align-items: stretch
+    .icon
+      width: 30px
+      margin: 0 13px 0 0
+      svg
+        fill: #00b73e
+    .text
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: space-between
+      font-size: 18px
+  .it-center
+    display: flex
+    align-items: center
+    font-weight: 500
+    font-size: 18px
+
+  .it-right
+    width: 252px
+    text-align: left
+    font-weight: 500
+    font-size: 18px
+    .btn
+      width: 252px
+      padding: 0
+      height: 50px
+  .rate
+    font-size: 18px
+    font-weight: 500
+  .links
+    font-weight: 400
+    &:hover
+      color: #fff
+
+
+.avatar-user
+  display: flex
+  align-items: center
+  .avatar
+    width: 32px
+    height: 32px
+  .name
+    margin: 0 5px 0 11px
+    font-weight: 500
+    font-size: 18px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+  sub
+    font-size: 14px
+    text-transform: uppercase
+    vertical-align: 1em
+  .user-loc
+    margin: 0 40px 0 0
+
+.avatar-user.it-center__right
+  .name
+    align-items: flex-start
+
+
+.it-center__center
+  margin: 0 20px
+  font-family: 'maniCF', sans-serif
+  display: flex
+  align-items: center
+  font-size: 36px
+  flex-wrap: wrap
+
+.coefficient
+  font-size: 18px
+  font-weight: 400
+  font-family: 'Montserrat', sans-serif
+  text-align: center
+  color: #ffffff
+  margin: 5px auto 0
+
+.vs
+  text-transform: uppercase
+
+.name-winner
+  font-size: 18px
+  font-weight: 500
+
+.the-participants
+  font-weight: 500
+  font-size: 18px
+  font-family: 'Montserrat', sans-serif
+  color: #fff
+
+.pro-it
+  color: #fff
+  width: 51px
+  height: 23px
+  border-radius: 5px
+  background-color: #00ad5d
+  display: inline-flex
+  align-items: center
+  justify-content: center
+
+
+.league-wrapper__slider
+  //margin: 0
+  .slick-arrow
+    width: 52px
+    height: 52px
+    box-shadow: 0 15px 26px rgba(0, 0, 0, 0.34)
+    background: url("../img/arrow-right_white.png") no-repeat center #444d68
+      size: 9px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+  .slick-next
+    right: 30px
+    &:hover, &:focus
+      background: url("../img/arrow-right_white.png") no-repeat center #444d68
+        size: 9px
+  .slick-prev
+    left: 30px
+    background: url("../img/arrow-left_white.png") no-repeat center #444d68
+      size: 9px
+    z-index: 2
+    &:hover, &:focus
+      background: url("../img/arrow-left_white.png") no-repeat center #444d68
+        size: 9px
+
+
+.it-right__wrapper-line
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 0 20px
+  margin: 0 0 20px
+  border-bottom: 1px solid #444d68
+  &:last-child
+    padding: 0
+    margin: 0
+    border: none
+
