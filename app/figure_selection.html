@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>KNBL</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<!-- Header inside body -->
+<header class="top-line">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-login" href="http://knbl.pro/login.html">
+                        <img src="img/enter.png" alt="">
+                    </a>
+                    <a class="navbar-brand d-none d-md-flex" href="index.html">
+                        <img src="img/logo_header.svg" alt="Logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMainMenu"
+                            aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarMainMenu">
+                        <div class="line d-flex d-lg-none">
+                            <h3>Меню</h3>
+                            <div class="btn-close"><img src="img/exit.png" alt=""></div>
+                        </div>
+
+                        <ul class="navbar-nav nav-language">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle nav-language__button" href="index.html#"
+                                   id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <img src="img/flag_ru_small.png" alt="">
+                                    <span class="text">RU</span>
+                                </a>
+                                <div class="dropdown-menu nav-language__menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="index.html#"><img src="img/flag_ru_big.png" alt="">&nbsp;RU</a>
+                                    <a class="dropdown-item" href="index.html#"><img src="img/flag_us_big.png" alt="">&nbsp;EN</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav nav-header-menu">
+                            <li class="nav-item navbar__item active">
+                                <a class="nav-link" href="index.html#">Правила <span
+                                      class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item navbar__item">
+                                <a class="nav-link" href="index.html#">Рейтинг</a>
+                            </li>
+                            <li class="nav-item navbar__item">
+                                <a class="nav-link" href="index.html#">Турниры</a>
+                            </li>
+                            <li class="nav-item navbar__item">
+                                <a class="nav-link nav__pro" href="index.html#">PRO</a>
+                            </li>
+                        </ul>
+
+
+                    </div><!-- /.collapse -->
+
+
+                    <div class="user__rating-wrapper d-none d-sm-flex">
+                        <div class="money-user">
+                            <div class="account-rate">
+                                T
+                            </div>
+                            <h4 class="the-sum">999 999 ₽</h4>
+                        </div>
+
+                        <div class="user__rating">
+                            <div class="icon"><img src="img/pro-league-top.png" alt=""></div>
+                            <h4>127 432</h4>
+                        </div>
+                    </div>
+
+                          <!--  user-rating mobile-->
+                    <div class="user__rating-wrapper d-flex d-sm-none">
+                        <div class="money-user">
+                            <div class="account-rate">
+                                T
+                            </div>
+                            <h4 class="the-sum">99К ₽</h4>
+                        </div>
+
+                        <div class="user__rating">
+                            <div class="icon"><img src="img/pro-league-top.png" alt=""></div>
+                            <h4>127К</h4>
+                        </div>
+                    </div><!-- user-rating mobile-->
+
+                    <div class="user-account dropdown">
+                        <div class="icon"><img src="img/login_top.png" alt=""></div>
+                        <div class="text dropdown-toggle" data-toggle="dropdown" id="userDropdown">
+                            <h4>Administrator</h4>
+                            <div class="icon-flag"><img src="img/flag_ru_big.png" alt=""></div>
+                        </div>
+
+                        <div class="dropdown-menu dropdown-menu__user" aria-labelledby="userDropdown">
+                            <div class="btn-close"><img src="img/exit.png" alt=""></div>
+
+                            <a href="#" class="dropdown-item">
+                                <span class="icon"><img src="img/home.png" alt=""></span>
+                                <span class="text">Личный кабинет</span>
+                            </a>
+
+                            <a href="#" class="dropdown-item d-flex d-md-none">
+                                <span class="icon"><img src="img/contacts/mail_green.png" alt=""></span>
+                                <span class="text">Личные сообщения</span>
+                                <span class="quantity bg-red">9</span>
+                            </a>
+
+                            <a href="#" class="dropdown-item d-flex d-md-none">
+                                <span class="icon green">+</span>
+                                <span class="text">Пополнить счет</span>
+                            </a>
+
+                            <a href="#" class="dropdown-item d-flex d-md-none">
+                                <span class="icon red">-</span>
+                                <span class="text">Вывести средства</span>
+                            </a>
+
+                            <a href="#" class="dropdown-item">
+                                <span class="icon"><img src="img/enter.png" alt=""></span>
+                                <span class="text">Выйти</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="fixed-tabs__menu d-none d-md-flex">
+                    <a href="#" class="main-mail"><img src="img/contacts/mail.png" alt="">
+                        <span class="icon"></span>
+                    </a>
+                    <a href="#" class="replenish-account">Пополнить счет</a>
+                    <a href="#" class="withdraw">Вывести </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- the content -->
+<main class="main-content">
+
+    <div class="opponent-selection figure-selection">
+        <div class="container">
+
+            <div class="row section-title">
+                    <h2>Игра началась</h2>
+            </div>
+
+            <div class="section-line row d-none d-md-flex">
+                <div class="avatar-user col-4 justify-content-start">
+                    <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+
+                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                    <div class="name">
+                        <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                    </div>
+                </div>
+
+                <div class="field-game__top col-4 justify-content-center">
+                    <div class="icon"><img src="img/figures/bronze.svg" alt=""></div>
+                    <div class="name color-bronze">Бронзовая лига</div>
+                </div>
+
+                <div class="avatar-user col-4 justify-content-end">
+                    <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+
+                    <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                    <div class="name">
+                        <h5>Игрок №2 <sub class="green">PRO</sub></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row field-game">
+
+                <div class="field-game__top d-flex flex-row justify-content-between col-12">
+
+                    <div class="view col-6 col-md-4">
+                        <div class="icon"><img src="img/vision.png" alt=""></div>
+                        <div class="text">36</div>
+                    </div>
+
+                    <div class="col-12 col-md-4 order-md-0 order-1">
+                        <div class="name color-bronze d-flex d-md-none justify-content-center">Бронзовая лига</div>
+
+                        <div class="bank-wrapper">
+                            <div class="bank d-none d-lg-flex">
+                                <div class="icon"><img src="img/bank.png" alt=""></div>
+                                <div class="the-sum">
+                                    <p>10 ₽ </p>
+                                    <span>(комиссия 1,5 ₽)</span>
+                                </div>
+                            </div>
+
+                            <div class="bank d-flex d-lg-none">
+                                <div class="icon"><img src="img/bank.png" alt=""></div>
+                                <div class="the-sum">
+                                    <p>10 ₽ </p>
+                                    <span>(<span class="red">-</span> 1,5 ₽)</span>
+                                </div>
+                            </div>
+
+                            <div class="victory-score">
+                                <p>Побед</p>
+                                <span> 0 / 1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 text-right">
+                        <div class="number-game"><p>Игра:</p> <span>#415236</span></div>
+                    </div>
+
+                    <div class="score-game green col-12 col-md-4 d-flex d-md-none order-md-0 order-2">
+                        <div class="number">0</div>
+                        <div class="vs m-20">:</div>
+                        <div class="number">0</div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 justify-content-center d-flex d-md-none flex-column align-item-center">
+                    <div class="avatar-user">
+                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+
+                        <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                        <div class="name">
+                            <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                        </div>
+                    </div>
+
+                    <div class="rate">
+                        <div class="rate-icon"><img src="img/stavka.png" alt=""></div>
+                        <p>10 </p>
+                        <span>(50 ₽)</span>
+                    </div>
+                </div>
+
+                <div class="battle-figure col-6 col-md-4">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.42 458.02">
+                            <g>
+                                <g>
+                                    <path class="cls-1"
+                                          d="M283.82,444.76s-63.25,24.86-206.71,6.49V343.17s.24,3.24-19.1,0-17.66-19.46-17.66-19.46L.72,155.1s-7.64-38.37,26.74-51.88c10.39-4.08,87.36-25.94,87.36-25.94s38.67-8.65,45.59,31.07-25.54,50.26-25.54,50.26-68.12,21-69.22,22.43-2.66,6.05,0,9.73,31-4.87,31-4.87c107.42,35.13,94,151.32,94,151.32s5.13,4.19,9.07,2.7S208,244.4,138.22,194.55c24,1.62,37.65-19.62,39.14-18.37s5.88,43.4,40.58,43.23c25.63-2.16,33.33-21.3,34.85-21.08s11.7,32.43,39.63,31.89,32.95-19.46,34.37-19.46,0,61.07,0,96.74-41.53,34-41.53,34Z"/>
+                                    <path class="cls-1"
+                                          d="M34.49,90.25c43.57-13,46-13,66-18.91.48-12.43,0-34.59,0-34.59S95,12.43,68.28,11.35c-22-1.08-30.14,13.15-32.23,23.78C33.41,48.58,34.62,67.82,34.49,90.25Z"/>
+                                    <path class="cls-1"
+                                          d="M110.05,66.47V27.56C110.05,17.21,115.54,0,143,0s33.42,28.1,33.42,28.1V154s-2.15,19-22.92,27.56c-7.76,2-16.59,6.08-31-7.57,48.22-11.34,46.79-51.34,46.79-51.34s5.25-50-37.72-54.58Z"/>
+                                    <path class="cls-1"
+                                          d="M184.52,54.58c-1,31.74,2.39,127,2.39,127s6.21,27.56,31,27.56,32.46-27.56,32.46-27.56v-127S248,24.32,217.46,24.32C193.12,24.25,184.88,42.58,184.52,54.58Z"/>
+                                    <path class="cls-1"
+                                          d="M259.48,62.69c1.64-7.26,12.26-26.39,35.11-25.95s31.93,21.08,32.2,25.95.6,124.83,0,129.16S317,221,293.13,221s-33.49-21.61-33.65-28.64S257.31,72.24,259.48,62.69Z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="rate">
+                        <div class="rate-icon"><img src="img/stavka.png" alt=""></div>
+                        <p>10 </p>
+                        <span>(50 ₽)</span>
+                    </div>
+                </div>
+
+                <div class="score-game green col-12 col-md-4 d-none d-md-flex">
+                    <div class="number">0</div>
+                    <div class="vs m-20">:</div>
+                    <div class="number">0</div>
+
+                    <div class="timer-wrapper d-none d-md-flex w-100">
+                        <div class="timer">5</div>
+                    </div>
+                </div>
+
+                <div class="battle-figure battle-figure-right col-6 col-md-4">
+
+                    <div class="icon icon-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.42 458.02">
+                            <g>
+                                <g>
+                                    <path class="cls-1"
+                                          d="M283.82,444.76s-63.25,24.86-206.71,6.49V343.17s.24,3.24-19.1,0-17.66-19.46-17.66-19.46L.72,155.1s-7.64-38.37,26.74-51.88c10.39-4.08,87.36-25.94,87.36-25.94s38.67-8.65,45.59,31.07-25.54,50.26-25.54,50.26-68.12,21-69.22,22.43-2.66,6.05,0,9.73,31-4.87,31-4.87c107.42,35.13,94,151.32,94,151.32s5.13,4.19,9.07,2.7S208,244.4,138.22,194.55c24,1.62,37.65-19.62,39.14-18.37s5.88,43.4,40.58,43.23c25.63-2.16,33.33-21.3,34.85-21.08s11.7,32.43,39.63,31.89,32.95-19.46,34.37-19.46,0,61.07,0,96.74-41.53,34-41.53,34Z"/>
+                                    <path class="cls-1"
+                                          d="M34.49,90.25c43.57-13,46-13,66-18.91.48-12.43,0-34.59,0-34.59S95,12.43,68.28,11.35c-22-1.08-30.14,13.15-32.23,23.78C33.41,48.58,34.62,67.82,34.49,90.25Z"/>
+                                    <path class="cls-1"
+                                          d="M110.05,66.47V27.56C110.05,17.21,115.54,0,143,0s33.42,28.1,33.42,28.1V154s-2.15,19-22.92,27.56c-7.76,2-16.59,6.08-31-7.57,48.22-11.34,46.79-51.34,46.79-51.34s5.25-50-37.72-54.58Z"/>
+                                    <path class="cls-1"
+                                          d="M184.52,54.58c-1,31.74,2.39,127,2.39,127s6.21,27.56,31,27.56,32.46-27.56,32.46-27.56v-127S248,24.32,217.46,24.32C193.12,24.25,184.88,42.58,184.52,54.58Z"/>
+                                    <path class="cls-1"
+                                          d="M259.48,62.69c1.64-7.26,12.26-26.39,35.11-25.95s31.93,21.08,32.2,25.95.6,124.83,0,129.16S317,221,293.13,221s-33.49-21.61-33.65-28.64S257.31,72.24,259.48,62.69Z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="rate">
+                        <div class="rate-icon"><img src="img/stavka.png" alt=""></div>
+                        <p>2 </p>
+                        <span>(10 ₽)</span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 justify-content-center d-flex d-md-none flex-column align-item-center">
+                    <div class="avatar-user">
+                        <div class="user-loc"><img src="img/flag_ru_small.png" alt=""></div>
+
+                        <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                        <div class="name">
+                            <h5>Игрок №2 <sub class="green">PRO</sub></h5>
+                        </div>
+                    </div>
+
+                    <div class="rate">
+                        <div class="rate-icon"><img src="img/stavka.png" alt=""></div>
+                        <p>2 </p>
+                        <span>(10 ₽)</span>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center d-flex d-md-none">
+                    <div class="figures-box figures-box__active">
+                        <div class="icon">
+                            <img src="img/figures/rock.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="figures-box">
+                        <div class="icon">
+                            <img src="img/figures/scissors.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="figures-box">
+                        <div class="icon">
+                            <img src="img/figures/paper.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field-game__bottom col-12">
+                    <div class="timer-wrapper d-flex d-md-none">
+                        <div class="timer">5</div>
+                    </div>
+
+                    <a href="#" class="btn btn-green_2 btn-primary">Покинуть</a>
+                </div>
+
+            </div>
+
+            <div class="figures-wrapper row d-none d-md-flex">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="figures-box figures-box__active">
+                        <div class="icon">
+                            <img src="img/figures/rock.svg" alt="">
+                        </div>
+                        <h6 class="green">Камень</h6>
+                    </div>
+
+                    <div class="figures-box">
+                        <div class="icon">
+                            <img src="img/figures/scissors.svg" alt="">
+                        </div>
+                        <h6 class="green">Ножницы</h6>
+                    </div>
+
+                    <div class="figures-box">
+                        <div class="icon">
+                            <img src="img/figures/paper.svg" alt="">
+                        </div>
+                        <h6 class="green">Бумага</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<!-- the content -->
+
+
+<!-- footer -->
+<footer class="bottom-line">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-lg-4 col-md-6 col-12 d-flex d-lg-none">
+                <div class="footer__circled-age">
+                    <img src="img/18+.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 footer-box">
+                <h3>Навигация</h3>
+                <ul class="footer__nav-menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Правила</a></li>
+                    <li><a href="#">Рейтинг</a></li>
+                    <li><a href="#">Турниры</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 footer-box">
+                <h3>О нас</h3>
+                <ul class="footer__nav-menu">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Сотрудничество</a></li>
+                    <li><a href="#">Реферальная программа</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 footer-box">
+                <h3>Соглашения</h3>
+                <ul class="footer__nav-menu">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li>2019 &copy; KNBL</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+            <div class="col-xl-4 col-lg-4 col-12 d-none d-lg-flex">
+                <div class="footer__circled-age">
+                    <img src="img/18+.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12 footer-box">
+                <h3>Платежные системы</h3>
+                <ul class="footer__nav-menu footer__nav-social">
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/visa.png"/></li>
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/mastercard.png"/></li>
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/paypal.png"/></li>
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/webmoney.png"/></li>
+                    <li><img class="footer__pictogram-button" alt="" src="img/payment/yandex-money.png"/></li>
+                </ul>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12 footer-box">
+                <h3>Присоединяйтесь к нам</h3>
+                <ul class="footer__nav-menu footer__nav-social">
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/vk.png"/></a></li>
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/telegram.png"/></a>
+                    </li>
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/instagram.png"/></a>
+                    </li>
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/facebook.png"/></a>
+                    </li>
+                    <li><a href="#"><img class="footer__pictogram-button" alt="" src="img/contacts/youtube.png"/></a>
+                    </li>
+                    <li>
+                        <a href="#"> <img class="footer__pictogram-button" alt="" src="img/contacts/discord.png"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--modal-->
+<div class="modal fade" id="modalTiket" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Новый тикет</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="img/close-red.png" alt=""></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="new-message form">
+                    <label><textarea name="message"
+                                     placeholder="Я слишком туп, чтобы самостоятельно разобраться и уповаю на вашу мудрость, о великая поддержка"></textarea></label>
+
+
+                    <div class="line-wrapper">
+                        <div class="box-left">
+                            <label class="custom-file-upload">
+                                <input type="file">
+                                <span class="custom-file-upload__text">Загрузить изображение <span
+                                      class="a-plus">+</span></span>
+                            </label>
+
+                            <ul class="list-upload">
+                                <li>
+                                    <div class="name">IMG0001</div>
+                                    <div class="icon-del red">-</div>
+                                </li>
+                                <li>
+                                    <div class="name">IMG0002</div>
+                                    <div class="icon-del red">-</div>
+                                </li>
+                                <li>
+                                    <div class="name">IMG0003</div>
+                                    <div class="icon-del red">-</div>
+                                </li>
+                                <li>
+                                    <div class="name">IMG0004</div>
+                                    <div class="icon-del red">-</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="box-right">
+                            <button type="button" class="btn btn-primary btn-green_2">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

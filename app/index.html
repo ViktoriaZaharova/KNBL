@@ -30,14 +30,12 @@
 <body>
 
 <!-- Header inside body -->
-<header class="top-line">
+<header class="top-line header">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-expand-lg py-3 navbar-dark">
-                    <a class="navbar-login" href="http://knbl.pro/login.html">
-                        <img src="img/enter.png" alt="">
-                    </a>
+                <nav class="navbar navbar-expand-lg navbar-dark">
+
                     <a class="navbar-brand" href="index.html">
                         <img src="img/logo_header.svg" alt="Logo"/>
                     </a>
@@ -47,6 +45,26 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarMainMenu">
+                        <div class="line d-flex d-lg-none">
+                            <h3>Меню</h3>
+                            <div class="btn-close"><img src="img/exit.png" alt=""></div>
+                        </div>
+
+                        <ul class="navbar-nav nav-language">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle nav-language__button" href="index.html#"
+                                   id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <img src="img/flag_ru_small.png" alt="">
+                                    <span class="text">RU</span>
+                                </a>
+                                <div class="dropdown-menu nav-language__menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="index.html#"><img src="img/flag_ru_big.png" alt="">&nbsp;RU</a>
+                                    <a class="dropdown-item" href="index.html#"><img src="img/flag_us_big.png" alt="">&nbsp;EN</a>
+                                </div>
+                            </li>
+                        </ul>
+
                         <ul class="navbar-nav nav-header-menu">
                             <li class="nav-item navbar__item active">
                                 <a class="nav-link" href="index.html#">Правила <span
@@ -63,65 +81,31 @@
                             </li>
                         </ul>
 
-                        <ul class="navbar-nav nav-language">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle nav-language__button" href="index.html#"
-                                   id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                   aria-expanded="false">
-                                    <img src="img/flag_ru_small.png" alt="">
-                                    <span class="text">RU</span>
-                                </a>
-                                <div class="dropdown-menu nav-language__menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="index.html#"><img src="img/flag_us_big.png" alt="">&nbsp;EN</a>
-                                </div>
+
+                    </div><!-- /.collapse -->
+
+
+                    <button class="d-flex d-lg-none navbar-login" type="button" data-toggle="collapse"
+                            data-target="#authorizationMainMenu" aria-controls="navbarMainMenu" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <img src="img/enter.png" alt="">
+                    </button>
+
+                    <div class="collapse navbar-collapse ml-auto" id="authorizationMainMenu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link nav__login" href="login.html">Войти</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="registration.html">Регистрация</a>
                             </li>
                         </ul>
+                    </div>
 
-                        <div class="user__rating-wrapper">
-                            <div class="money-user">
-                                <div class="account-rate">
-                                    T
-                                </div>
-                                <h4 class="the-sum">999 999 ₽</h4>
-                            </div>
 
-                            <div class="user__rating">
-                                <div class="icon"><img src="img/pro-league-top.png" alt=""></div>
-                                <h4>127 432</h4>
-                            </div>
-                        </div>
-
-                        <div class="user-account dropdown ml-auto">
-                            <div class="icon"><img src="img/login_top.png" alt=""></div>
-                            <div class="text dropdown-toggle" data-toggle="dropdown" id="userDropdown">
-                                <h4>Administrator</h4>
-                                <div class="icon-flag"><img src="img/flag_ru_big.png" alt=""></div>
-                            </div>
-
-                            <div class="dropdown-menu dropdown-menu__user" aria-labelledby="userDropdown">
-                                <div class="btn-close"><img src="img/exit.png" alt=""></div>
-
-                                <a href="#" class="dropdown-item">
-                                    <span class="icon"><img src="img/home.png" alt=""></span>
-                                    <span class="text">Личный кабинет</span>
-                                </a>
-
-                                <a href="#" class="dropdown-item">
-                                    <span class="icon"><img src="img/enter.png" alt=""></span>
-                                    <span class="text">Выйти</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div><!-- /.collapse -->
                 </nav>
 
-                <div class="fixed-tabs__menu">
-                    <a href="#" class="main-mail"><img src="img/contacts/mail.png" alt="">
-                        <span class="icon"></span>
-                    </a>
-                    <a href="#" class="replenish-account">Пополнить счет</a>
-                    <a href="#" class="withdraw">Вывести </a>
-                </div>
+
             </div>
         </div>
 
@@ -129,261 +113,223 @@
 </header>
 
 <!-- the content -->
-<main class="main-content container-fluid">
+<main class="main-content">
 
-    <div class="section-profile">
+    <div class="main-logo linear-bottom">
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <ul class="nav nav-pills nav-tabs" id="pills-tab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                               role="tab" aria-controls="pills-home" aria-selected="true">Профиль</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
-                               role="tab" aria-controls="pills-profile" aria-selected="false">Статистика игр</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
-                               role="tab" aria-controls="pills-contact" aria-selected="false">Реферальная программа</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-help-tab" data-toggle="pill" href="#help-support" role="tab"
-                               aria-controls="pills-contact" aria-selected="false">Техническая поддержка</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-bets-tab" data-toggle="pill" href="#bets" role="tab"
-                               aria-controls="pills-contact" aria-selected="false">Ставки</a>
-                        </li>
-                    </ul>
+                    <div class="main-logo__image">
+                        <img alt="KNBL logo" src="img/logo_main.svg"/>
+                    </div>
 
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                             aria-labelledby="pills-home-tab">
-
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-
-                                    <div class="profile-box user-information">
-                                        <div class="user-information__photo">
-                                            <div class="photo">
-                                                <img src="img/avatar.png" alt="">
-                                            </div>
-
-                                            <a href="#" class="btn-edit">
-                                                <span class="text">Сменить фото</span>
-                                                <span class="icon"><img src="img/pencil.png" alt=""></span>
-                                            </a>
-                                        </div>
-
-                                        <div class="user-information__text">
-                                            <h3 class="name green">ZerglingCarbot</h3>
-
-                                            <ul class="list-contacts">
-                                                <li><a href="mailto:gamer@gmail.com">
-                                                    <span class="icon"><img src="img/contacts/mail_green.png"
-                                                                            alt=""></span>
-                                                    gamer@gmail.com
-                                                </a></li>
-                                                <li><a href="tel:+79998887766" class="phone">
-                                                    <span class="icon"><img src="img/contacts/phont.png" alt=""></span>
-                                                    + 7 (999) 888-77-66</a></li>
-                                            </ul>
-
-                                            <ul class="navbar-nav nav-language">
-                                                <li class="nav-item dropdown">
-                                                    <a class="dropdown-toggle nav-language__button" href="index.html#"
-                                                       id="navbarDropdownLocation" role="button" data-toggle="dropdown"
-                                                       aria-haspopup="true" aria-expanded="false">
-                                                        <img src="img/flag_ru_small.png" alt="">
-                                                        <span class="text">Россия</span>
-                                                    </a>
-                                                    <div class="dropdown-menu nav-language__menu"
-                                                         aria-labelledby="navbarDropdownLocation">
-                                                        <a class="dropdown-item" href="index.html#"><img
-                                                              src="img/flag_us_big.png" alt="">США</a>
-                                                    </div>
-                                                </li>
-                                            </ul>
-
-                                            <h4>Валюта:</h4>
-                                            <ul class="navbar-nav nav-language">
-                                                <li class="nav-item dropdown">
-                                                    <a class="dropdown-toggle nav-language__button" href="index.html#"
-                                                       id="navbarDropdownCurrent" role="button" data-toggle="dropdown"
-                                                       aria-haspopup="true" aria-expanded="false">
-                                                        <img src="img/flag_ru_small.png" alt="">
-                                                        <span class="text">RUR - ₽</span>
-                                                    </a>
-                                                    <div class="dropdown-menu nav-language__menu"
-                                                         aria-labelledby="navbarDropdownCurrent">
-                                                        <a class="dropdown-item" href="index.html#"><img
-                                                              src="img/flag_us_big.png" alt="">USD - $</a>
-                                                        <a class="dropdown-item" href="index.html#"><img
-                                                              src="img/flag_es_big.png" alt="">EUR - €</a>
-                                                    </div>
-                                                </li>
-                                            </ul>
-
-                                            <a href="#" class="btn-edit">
-                                                <span class="text">Редактировать данные</span>
-                                                <span class="icon"><img src="img/pencil.png" alt=""></span>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="profile-box change-password">
-                                        <h3>Сменить пароль</h3>
-                                        <form class="login-form__login change-password__form form">
-                                            <div class="input-group form-group form-label-group">
-                                                <input type="password" class="form-control" id="current_password"
-                                                       placeholder=" " required="">
-                                                <label for="current_password" class="form-control-placeholder">Текущий
-                                                                                                               пароль</label>
-                                            </div>
-                                            <div class="input-group form-group form-label-group">
-                                                <input type="password" class="form-control" id="new_password"
-                                                       placeholder=" " required="">
-                                                <label for="new_password" class="form-control-placeholder">Новый
-                                                                                                           пароль</label>
-                                            </div>
-                                            <div class="input-group form-group form-label-group">
-                                                <input type="password" class="form-control" id="double_password"
-                                                       placeholder=" " required="">
-                                                <label for="double_password" class="form-control-placeholder">Подведить
-                                                                                                              пароль</label>
-                                            </div>
-                                            <button type="submit" class="submit-btn btn btn-primary btn-green">
-                                                Сохранить
-                                            </button>
-                                        </form>
-                                    </div>
-
-                                    <div class="profile-box social-wrapper">
-                                        <h3>Социальные сети</h3>
-
-                                        <ul class="footer__nav-menu footer__nav-social">
-                                            <li><a href="#">
-                                                <span class="icon"><img class="footer__pictogram-button" alt=""
-                                                                        src="img/fb.png"/></span>
-                                                <span class="text">facebook.com/godofchaos</span>
-                                            </a>
-                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
-                                            </li>
-                                            <li><a href="#"><span class="icon">
-                                                <img class="footer__pictogram-button" alt="" src="img/inst.png"/>
-                                            </span>
-                                                <span class="text">Добавить аккаунт</span></a>
-                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
-                                            </li>
-
-                                            <li><a href="#">
-                                                <span class="icon"><img class="footer__pictogram-button" alt=""
-                                                                        src="img/vk.png"/></span>
-                                                <span class="text">Добавить аккаунт</span>
-                                            </a>
-                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
-                                            </li>
-                                            <li><a href="#">
-                                                <span class="icon"><img class="footer__pictogram-button" alt=""
-                                                                        src="img/discord.png"/></span>
-                                                <span class="text">Добавить аккаунт</span></a>
-                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-lg-6">
-                                    <div class="profile-box balance-account">
-                                        <div class="balance-account__top">
-                                            <div class="question-icon"><img src="img/question.png" alt=""></div>
-                                        </div>
-                                        <div class="the-sum">
-                                            999 999 ₽
-                                        </div>
-
-                                        <div class="score">
-                                            <p>Реальный счет: <span>100₽</span></p>
-                                        </div>
-                                        <div class="btn-wrapper">
-                                            <button class="btn btn-primary btn-green">Пополнить</button>
-
-                                            <button class="btn btn-primary btn-border">Забрать 100₽</button>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="profile-box social-wrapper tied-wallets">
-                                        <h3>Привязанные кошельки</h3>
-
-                                        <ul class="footer__nav-menu footer__nav-social">
-                                            <li><a href="#">
-                                                <span class="icon"><img class="footer__pictogram-button" alt=""
-                                                                        src="img/payment/payment_black.png"/></span>
-                                                <span class="text">хххх хххх хххх хххх 9999</span>
-                                            </a>
-                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
-                                            </li>
-                                            <li><a href="#"><span class="icon">
-                                                <img class="footer__pictogram-button" alt=""
-                                                     src="img/payment/qiwi_black.png"/>
-                                            </span>
-                                                <span class="text">Добавить аккаунт</span></a>
-                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
-                                            </li>
-
-                                            <li><a href="#">
-                                                <span class="icon"><img class="footer__pictogram-button" alt=""
-                                                                        src="img/payment/webmoney_black.png"/></span>
-                                                <span class="text">Добавить аккаунт</span>
-                                            </a>
-                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
-                                            </li>
-                                            <li><a href="#">
-                                                <span class="icon"><img class="footer__pictogram-button" alt=""
-                                                                        src="img/payment/yandex_black.png"/></span>
-                                                <span class="text">Добавить аккаунт</span></a>
-                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
-                                            </li>
-                                            <li><a href="#">
-                                                <span class="icon"><img class="footer__pictogram-button" alt=""
-                                                                        src="img/payment/paypal_black.png"/></span>
-                                                <span class="text">Добавить аккаунт</span></a>
-                                                <a href="#" class="btn-edit"><img src="img/pencil.png" alt=""></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                             aria-labelledby="pills-profile-tab">2
-                        </div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                             aria-labelledby="pills-contact-tab">3
-                        </div>
-                        <div class="tab-pane fade" id="help-support" role="tabpanel"
-                             aria-labelledby="pills-contact-tab">4
-                        </div>
-                        <div class="tab-pane fade" id="bets" role="tabpanel" aria-labelledby="pills-contact-tab">5
+                    <div class="main-text">
+                        <h1 class="main-text__title">Международная лига</h1>
+                        <div class="main-text__description">
+                            Онлайн лига самой популярной игры в мире.
+                            Вы можете сражаться с игроками по всему миру,
+                            выигрывать реальные деньги и стать профессиональным
+                            <span class="green">киберспортсменом</span>
                         </div>
                     </div>
 
                 </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 figures__figure ">
+                    <img class="figures__image" alt="" src="img/Stone1.png"/>
+                    <div class="figures__text"><span class="green">К</span>амень</div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 figures__figure">
+                    <img class="figures__image" alt="" src="img/Sic1.png"/>
+                    <div class="figures__text"><span class="green">Н</span>ожницы</div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 figures__figure">
+                    <img class="figures__image" alt="" src="img/Paper1.png"/>
+                    <div class="figures__text"><span class="green">Б</span>умага</div>
+                </div>
+
             </div>
 
-            <div class="row button-wrapper">
-                <a href="#" class="btn btn-primary btn-green">Сохранить</a>
+            <div class="row become-participant">
+                <div class="col-12">
+                    <div class="become-participant__wrapper">
+                        <div class="short-line"></div>
+                        <a href="#" class="become-participant__button btn btn-green btn-primary">Стать участником</a>
+                        <div class="short-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="how-to-become linear-top">
+        <div class="container">
+            <div class="row how-to-become__wrapper">
+                <div class="col-12 col-xl-7 col-lg-6">
+                    <h2 class="home-title">Как стать участником?</h2>
+
+                    <div class="how-to-become__step">
+                        <div class="icon"><img src="img/registration.png" alt=""></div>
+                        <p>
+                            Пройдите простую
+                            <a href="#" class="green">процедуру Регистрации</a>
+                        </p>
+                    </div>
+
+                    <div class="how-to-become__step">
+                        <div class="icon"><img src="img/league.png" alt=""></div>
+                        <p>
+                            Выберите подходящую
+                            <a href="#" class="green">лигу для игры</a>
+                        </p>
+                    </div>
+
+                    <div class="how-to-become__step">
+                        <div class="icon"><img src="img/duel.png" alt=""></div>
+                        <p>
+                            Сражайтесь с игроками
+                            <a href="#" class="green">по всему миру</a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-5 col-lg-6 d-none d-lg-flex how-to-become__phone-wrapper">
+                    <div class="how-to-become__phone">
+                        <div class="how-to-become__phone-content">
+                            <div class="how-to-become__phone-content__logo"></div>
+                            <div class="how-to-become__phone-content__title">камень, ножницы, бумага</div>
+                            <div class="how-to-become__phone-content__subtitle green">Международная лига</div>
+                            <div class="how-to-become__phone-content__registration">Регистрация</div>
+                            <div class="how-to-become__phone-content__login-field">Логин</div>
+                            <div class="how-to-become__phone-content__email-field">Электронная почта</div>
+                            <div class="how-to-become__phone-content__password-fields">Пароль</div>
+                            <div class="how-to-become__phone-content__start-play-button">Начать играть</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+    </div><!-- /how-to-become -->
+
+    <div class="what-is-pro linear-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-12">
+                    <img src="img/pro_stars.svg" class="what-is-pro__stars-img" alt="PRO"/>
+                    <div class="green what-is-pro__stars-text">
+                        <div class="what-is-pro__stars-text-big">PRO</div>
+                        <div class="what-is-pro__stars-text-mid">LEAGUE</div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-12 col-12 white">
+                    <h2 class="home-title">Что такое лига &lt;PRO&gt;</h2>
+                    <div class="what-is-pro__description">
+                        <p><span class="green semibold">Лига &lt;PRO&gt;</span> - это лига, в которой могут принимать
+                                                                                участие
+                                                                                только профессиональные игроки. Каждый
+                                                                                из
+                                                                                вас
+                                                                                сможет попасть вэту лигу. Для этого
+                                                                                необходимо
+                                                                                постоянно играть и поднимать свой
+                                                                                рейтинг. </p>
+                        <p>По достижению нужного рейтинга вам будет открыт доступ в лигу "PRO", где вы сможете сразиться
+                           с
+                           лучшими игроками по всему миру</p>
+                    </div>
+                    <a href="registration.html" class="btn btn-primary btn-green">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div><!-- /what-is-pro -->
+
+    <div class="our-advantages linear-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="home-title">Наши преимущества</h2>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="advantages-item">
+                        <div class="icon"><img src="img/advantages/world.png" alt=""/></div>
+                        <p>
+                            Первая в мире международная онлайн лига &quot;<span
+                              class="green">Камень, ножницы, бумага</span>&quot; </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="advantages-item">
+                        <div class="icon"><img src="img/advantages/joy.png" alt="" class="our-advantages__item-img"/>
+                        </div>
+                        <p>
+                            Возможность стать любому из вас профессиональным <span
+                              class="green">кибер-спортсменом</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="advantages-item">
+                        <div class="icon"><img src="img/advantages/coins.png" alt="" class="our-advantages__item-img"/>
+                        </div>
+                        <p>
+                            Зарабатывать деньги на игре или ставках на других спортсменов в <span class="green">онлайн режиме</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="advantages-item">
+                        <div class="icon"><img src="img/advantages/adaptive.png" alt=""/></div>
+                        <p>
+                            Удобная навигация позволит вам играть в любом <span class="green">мобильном устройстве или на PC</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /our-advantages -->
+
+    <div class="counters-wrapper linear-bottom">
+        <div class="container">
+            <div class="main-counters row">
+                <div class="col-12 col-md-4 main-counters__item">
+                    <div class="main-counters__label">
+                        Всего игроков
+                    </div>
+                    <div class="main-counters__number green">
+                        2582
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 main-counters__item">
+                    <div class="main-counters__label">
+                        Игроков онлайн
+                    </div>
+                    <div class="main-counters__number green">
+                        1621
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 main-counters__item">
+                    <div class="main-counters__label">
+                        Побед сегодня
+                    </div>
+                    <div class="main-counters__number green">
+                        22582
+                    </div>
+                </div>
+
+                <a href="registration.html" class="btn btn-primary btn-green">Присоединиться</a>
+            </div>
+        </div>
     </div>
+
 </main>
 <!-- the content -->
-
 
 <!-- footer -->
 <footer class="bottom-line">
@@ -456,16 +402,13 @@
 
 
 <script src="js/jquery.min.js"></script>
-<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"-->
-<!--        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
-<!--        crossorigin="anonymous"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>
-
 </body>
 </html>

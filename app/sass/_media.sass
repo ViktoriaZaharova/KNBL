@@ -101,6 +101,22 @@
   .coefficient
     font-size: 16px
 
+  .how-to-become
+    padding: 30px 0 62px
+
+  .how-to-become__step
+    width: 100%
+    padding: 0 35px
+
+  .home-title
+    font-size: 30px
+
+  .how-to-become__phone
+    &:before
+      left: -30px
+      width: 84px
+      height: 122px
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1050px)
@@ -348,8 +364,94 @@
   .it-center__center
     margin: 20px 0
 
+  .score-game
+    font-size: 48px
+
+  .field-game .avatar-user .name
+    font-size: 20px
+    margin: 0
+    font-weight: 400
+
+  .field-game .box-right h5
+    font-size: 20px
+
+  .figures-box
+    font-size: 20px
+    .icon
+      width: 70px
+      height: 68px
+      img
+        width: 25px
+
+  .section-title h2
+    text-transform: none
+
+  .battle-figure .icon
+    width: 120px
+    height: 200px
+
+  .result-round
+    font-size: 14px
+
+  .header
+    .navbar-dark .navbar-brand
+      padding: 0
+    .navbar-dark .navbar-toggler
+      margin: 0
+      order: -1
+
+  .main-logo
+    padding: 27px 0 60px
+    position: relative
+    .container
+      position: relative
+
+  .main-text__title
+    font-size: 40px
+
+
+  .how-to-become h2
+    margin: 0 0 28px
+
+  .what-is-pro .container
+    padding: 28px 15px 60px
+
+  .what-is-pro__description
+    margin: 29px 0 56px
+
+  .what-is-pro .btn-green
+    width: 290px
+
+  .our-advantages .container
+    padding: 32px 15px
+
+  .advantages-item
+    width: 100%
+    margin: 0 auto 20px
+
+  .our-advantages h2
+    margin: 0 auto 29px
+    text-align: center
+
+  .counters-wrapper
+    padding: 31px 0 0
+    .btn
+      margin: 60px auto
+    .main-counters__number
+      font-size: 36px
+      letter-spacing: 2.88px
+    .main-counters__label
+      font-size: 18px
+      margin: 0 0 25px
+
 
 @media only screen and (max-width: 767px)
+  .main-text__title
+    font-size: 20px
+
+  .main-text__description
+    max-width: 278px
+
   footer
     padding: 33px 0
 
@@ -477,6 +579,182 @@
   .question-wrapper__box-title
     padding: 17px 36px 22px 9px
 
+  .field-game
+    margin: 0 0 60px
+    background-color: #151921
+
+  .opponent-selection
+    padding: 64px 0 0 0
+
+  .field-game__top
+    margin: 0 0 30px
+    background: #1f2532
+    border-radius: 35px 35px 0 0
+    min-height: 97px
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    .icon
+      display: none
+    .name
+      margin: 0
+
+  .score-game
+    margin: 39px 0 37px
+
+  .field-game__line
+    margin: 36px 0 27px
+
+  .field-game__bottom
+    background: #1f2532
+    justify-content: center
+    align-items: center
+    margin: 29px 0 0
+    border-radius: 0 0 35px 35px
+    padding: 31px 10px 10px 10px
+    .btn
+      width: 270px
+      margin: 0 auto
+      height: 50px
+      padding: 0
+
+  .figures-box
+    &:nth-child(2)
+      margin: 0 16px
+    h6
+      display: none
+    .icon
+      margin: 0
+
+  .figure-selection .field-game
+    padding: 0
+
+  .section-title
+    margin: 0 0 28px
+
+  .figure-selection
+
+    .view
+      padding: 19px 15px 23px
+    .field-game__top
+      margin: 0 0 10px 0
+      .icon
+        display: flex
+      .name
+        font-size: 24px
+        margin: 0 0 19px
+    .victory-score
+      order: -1
+    .bank
+      margin: 0 0 8px
+    .field-game
+      .score-game
+        margin: 29px 0 21px
+    .avatar-user
+      justify-content: center
+    .rate
+      margin: 10px auto
+
+
+  .number-game
+    padding: 19px 0 23px
+    p
+      display: none
+
+  .battle-figure
+
+    .rate
+      display: none
+
+  .rate
+    margin: 0 auto
+
+  .battle-figure
+
+    .icon
+      width: 62px
+      height: 85px
+
+  .result-round
+    margin: 0 0 28px
+
+  .field-game
+    .field-game__bottom
+      .btn
+        margin: 0 auto 10px
+
+        &:last-child
+          margin: 0
+
+  .result-round
+    font-size: 16px
+
+  .main-logo__image
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    opacity: .1
+    width: 290px
+    max-width: 290px
+    height: 302px
+
+  .main-text__description
+    margin: 25px auto 0
+
+  .main-text
+    margin: 62px auto 59px
+
+  .figures__text
+    font-size: 16px
+    font-weight: 500
+
+  .figures__image
+    max-width: 77px
+
+  .become-participant__wrapper
+    margin: 61px auto 0
+    .btn
+      margin: 0
+      width: 290px
+
+  .short-line
+    display: none
+
+  .home-title
+    font-size: 22px
+
+  .how-to-become__step
+    flex-direction: column
+    align-items: center
+    //justify-content: center
+    width: 100%
+    height: 175px
+    padding: 23px 25px 0
+    text-align: center
+    background-image: linear-gradient(to right, #485576 0%, #30374a 100%)
+    .icon
+      margin: 0 auto 22px
+
+  .what-is-pro
+    .home-title
+      margin: 52px auto 0
+      text-align: center
+
+  .what-is-pro__stars-img
+    max-width: 290px
+
+  .what-is-pro .btn-green
+    margin: 0 auto
+
+  .main-counters__item
+    margin: 0 0 62px
+    &:last-child
+      margin: 0
+
+  .counters-wrapper .btn
+    width: 290px
+    margin: 0 auto 60px
+
 @media only screen and (max-width: 576px)
   .referral-program
     h4, h3
@@ -589,4 +867,7 @@
   .league-wrapper__slider
     .slick-slide
       padding: 0
+
+  .section-title h2
+    font-size: 34px
 
