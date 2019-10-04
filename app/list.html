@@ -57,12 +57,12 @@
                                 <a class="nav-link dropdown-toggle nav-language__button" href="index.html#"
                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                    aria-expanded="false">
-                                    <img src="img/flag_ru_small.png" alt="">
+                                    <img src="img/russia.svg" alt="">
                                     <span class="text">RU</span>
                                 </a>
                                 <div class="dropdown-menu nav-language__menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="index.html#"><img src="img/flag_ru_big.png" alt="">&nbsp;RU</a>
-                                    <a class="dropdown-item" href="index.html#"><img src="img/flag_us_big.png" alt="">&nbsp;EN</a>
+                                    <a class="dropdown-item" href="index.html#"><img src="img/russia.svg" alt="">&nbsp;RU</a>
+                                    <a class="dropdown-item" href="index.html#"><img src="img/en.svg" alt="">&nbsp;EN</a>
                                 </div>
                             </li>
                         </ul>
@@ -121,7 +121,7 @@
                         <div class="icon"><img src="img/login_top.png" alt=""></div>
                         <div class="text dropdown-toggle" data-toggle="dropdown" id="userDropdown">
                             <h4>Administrator</h4>
-                            <div class="icon-flag"><img src="img/flag_ru_big.png" alt=""></div>
+                            <div class="icon-flag"><img src="img/russia.svg" alt=""></div>
                         </div>
 
                         <div class="dropdown-menu dropdown-menu__user" aria-labelledby="userDropdown">
@@ -182,7 +182,9 @@
             <li><a href="figure_selection.html">КНБЛ-выбор фигуры-1170</a></li>
             <li><a href="result.html">КНБЛ-результат-1170</a></li>
             <li><a href="result_2.html">КНБЛ-результат-1170 (проиграл)</a></li>
-<!--            <li><a href="bids.html">КНБЛ-ставки не сделаны-1170</a></li>-->
+            <li><a href="bids.html">КНБЛ-ставки не сделаны-1170</a></li>
+            <li><a href="bids_2.html">КНБЛ-ставки сделаны-1170 (победа)</a></li>
+            <li><a href="bids_3.html">КНБЛ-ставки сделаны-1170 (проиграл)</a></li>
         </ul>
 
         <br>
@@ -207,6 +209,10 @@
 
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalReplenish">
             У вас не достаточно средств для входа в лигу
+        </button>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalVictory">
+            Вы выиграли!
         </button>
     </div>
 </main>
@@ -398,6 +404,22 @@
     </div>
 </div>
 
+<div class="modal fade" id="modalVictory" tabindex="-1" role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Вы выиграли!</h5>
+            </div>
+            <div class="modal-body">
+                <h3 class="green text-center">13,5₽</h3>
+                    <a href="#" class="btn btn-primary btn-green">Продолжить</a>
+                    <button type="button" class="btn btn-secondary links-red" data-dismiss="modal">Выйти</button>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

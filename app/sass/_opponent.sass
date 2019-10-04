@@ -201,22 +201,33 @@
   align-items: center
   position: relative
   .icon
-    transform: rotate(90deg)
-    height: 231px
-    width: 170px
+    width: 231px
+    height: 170px
+    display: flex
+    align-items: center
+    justify-content: center
     svg
+      transform: rotate(90deg)
       fill: #00b73e
-      width: 100%
-      height: 100%
+      width: 170px
+      height: 231px
 
 .battle-figure.battle-figure-right
   .icon
-    transform: rotate(90deg) scale(1,-1)
+    width: 300px
+    height: 170px
+    svg
+      width: 170px
+      height: 300px
   .icon-red
     svg
       fill: #f24841
   .rate
     margin: 55px 0 0 auto
+
+.rotate-90.icon
+  svg
+    transform: rotate(90deg) scale(1,-1)
 
 
 .rate

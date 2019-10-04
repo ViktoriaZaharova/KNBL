@@ -12,6 +12,10 @@ $(document).ready(function() {
     });
 
 
+    $('.bid-information__title').on('click', function () {
+       $(this).toggleClass('on').siblings('.bid-information__text').slideToggle();
+    });
+
     // slick active
     $(window).on('load resize', function() {
         if ($(window).width() < 992) {
@@ -72,4 +76,68 @@ $(document).ready(function() {
         }
     });
 // slick active
+
+    $('.slogan-games__slider').slick({
+        slidesToShow: 4,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    appendArrows: '.slogan-games__arrows',
+                }
+            }
+        ]
+    });
+
+
+    $('.main-slogan-games__slider').slick({
+        slidesToShow: 4,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });

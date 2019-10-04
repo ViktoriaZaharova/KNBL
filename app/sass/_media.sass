@@ -117,6 +117,24 @@
       width: 84px
       height: 122px
 
+  .coefficient-wrapper li
+    font-size: 14px
+    p
+      min-width: 147px
+
+  .bids-wrapper
+    .rate, .number-game
+      font-size: 14px
+
+  .bet-amount
+    width: 240px
+
+  .battle-figure.battle-figure-right .icon svg
+    height: 270px
+
+  .battle-figure.battle-figure-right .icon
+    width: 270px
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1050px)
@@ -445,6 +463,38 @@
       margin: 0 0 25px
 
 
+  .bids-wrapper
+    .info-rate
+      flex-direction: column
+    .coefficient-wrapper
+      margin: 0 0 10px
+    .rate
+      order: 1
+    .victory-score
+      flex-direction: column
+      align-items: center
+    .number-game
+      font-size: 18px
+
+  .bet-amount
+    width: 100%
+    margin: 0
+    order: 1
+
+  .field-game__top-left
+    flex-wrap: wrap
+    .bet-amount
+      margin: 0
+      width: 100%
+
+  .battle-figure.battle-figure-right .icon
+    width: 200px
+    height: 200px
+    svg
+      width: 200px
+      height: 200px
+
+
 @media only screen and (max-width: 767px)
   .main-text__title
     font-size: 20px
@@ -755,6 +805,60 @@
     width: 290px
     margin: 0 auto 60px
 
+  .slogan-games__slider
+    padding: 0
+
+  .slogan-games__box
+    margin: 0 auto
+
+  .bids-wrapper
+    .field-game__bottom .btn:last-child
+      margin: 0 auto
+    .victory-score
+      flex-direction: row
+      align-items: center
+    .view, .number-game
+      font-size: 16px
+      padding: 19px 15px
+    .bet-amount
+      order: inherit
+      margin: 22px 0 28px
+    .coefficient-wrapper
+      flex-direction: column
+      align-items: flex-start
+      margin: 0 0 19px
+      li
+        font-size: 16px
+        justify-content: space-between
+        width: 100%
+        font-weight: 400
+        font-family: 'Montserrat', sans-serif
+        p
+          min-width: auto
+    .button-wrapper
+      width: 100%
+      .btn
+        width: 265px
+        height: 30px
+        font-size: 16px
+        margin: 0 auto 10px
+        font-weight: 400
+        padding: 0
+
+
+
+  .field-game__top-right
+    justify-content: flex-end
+
+  .battle-figure.battle-figure-right .icon
+    width: 85px
+    height: 85px
+    svg
+      width: 85px
+      height: 110px
+
+
+
 @media only screen and (max-width: 576px)
   .referral-program
     h4, h3
@@ -772,6 +876,77 @@
   .profile-tabs.nav-tabs .slick-slide a
     text-align: center
     padding: 0 0 20px
+
+  .slogan-games__section
+    margin: 30px 0 59px
+
+  .slogan-games__slider
+    .slogan-games__box
+      margin: 20px auto
+      overflow: visible
+      height: auto
+      .icon
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 30px
+        margin: 0 0 6px 0
+      .league-name
+        flex-direction: column
+        align-items: center
+        display: flex
+        width: 100%
+        font-size: 18px
+        margin: -35px 0 0 0
+      .league-number
+        width: 100%
+        text-align: center
+        margin: 10px 0 15px
+      &:hover, &:focus
+        &:before
+          display: none
+        a.btn
+          position: relative
+          transform: translate(0)
+          top: 0
+          left: 0
+          padding: 0
+          visibility: visible
+          opacity: 1
+          margin: 20px auto 0
+          height: 30px
+
+      .slogan-games__box-line
+        flex-direction: column
+        align-items: center
+        .avatar-user
+          .name
+            flex-direction: row
+            align-items: flex-end
+          sub
+            margin: 0 0 10px 2px
+        .slogan-games__box-score
+          margin: 16px 0
+          font-size: 24px
+
+
+  .slogan-games__arrows
+    position: relative
+    justify-content: center
+    align-items: center
+    margin: 0 auto 33px
+    p
+      margin: 0 24px
+      font-size: 18px
+    .slick-next
+      right: 0
+      top: 0
+      position: relative
+    .slick-prev
+      left: auto
+      right: auto
+      bottom: 0
+      position: relative
 
 @media only screen and (max-width: 480px)
   .balance-account
@@ -858,6 +1033,24 @@
     .box-right
       margin: 30px auto 0
 
+  .slogan-games__box
+    width: 100%
+
+  .main-slogan-games__slider
+    padding: 58px 0 0 0
+    margin: -30px 0 0 0
+    .slick-next
+      top: 0
+    .slick-prev
+      left: 0
+      top: 0
+
+  .bets-are-made .number-of-bets__wrapper
+    margin: 0
+
+  .main-slogan-games__section
+    margin: 0 0 90px
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 340px)
@@ -870,4 +1063,7 @@
 
   .section-title h2
     font-size: 34px
+
+  .slogan-games__arrows p
+    margin: 0 22px
 

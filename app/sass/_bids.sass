@@ -7,6 +7,8 @@
     margin: 0
 
 .coefficient-wrapper
+  flex-direction: column
+  align-items: flex-start
   li
     display: flex
     align-items: center
@@ -23,6 +25,9 @@
 .bids-wrapper
   .field-game
     margin: 0 0 54px
+
+.opponent-selection.bids-wrapper
+  padding: 0
 
 .number-of-bets__wrapper
   margin: 0 0 118px
@@ -72,3 +77,200 @@
 .field-game__top-right
   justify-content: space-between
 
+//slogan-games__box
+.slogan-games__box
+  position: relative
+  width: 262px
+  height: 132px
+  border-radius: 25px
+  background-color: #1f2532
+  padding: 16px 20px 21px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: space-between
+  overflow: hidden
+  .icon
+    display: none
+  .league-number
+    margin: 9px 0 auto
+  &:hover
+    &:before
+      content: ''
+      position: absolute
+      background-color: #1f2532
+      opacity: .9
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      z-index: 2
+    a.btn
+      opacity: 1
+      visibility: visible
+  a.btn
+    position: absolute
+    left: 50%
+    top: 50%
+    z-index: 2
+    transform: translate(-50%,-50%)
+    width: 202px
+    height: 40px
+    font-size: 16px
+    font-weight: 400
+    opacity: 0
+    visibility: hidden
+
+.slogan-games__box-line
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  .avatar-user
+    .name
+      margin: 0
+      font-size: 16px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+.slogan-games__box-score
+  display: flex
+  align-items: center
+  font-size: 16px
+  color: #00ad5d
+  line-height: 16px
+  font-family: 'maniCF', sans-serif
+  .vs
+    margin: 0 2px
+
+.slogan-games__section
+  margin: 126px 0 118px
+  width: 100%
+  .slick-arrow
+    width: 42px
+    height: 42px
+    border: 1px solid #00ad5d
+      radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    transform: translate(0)
+    z-index: 2
+  .slick-next
+    background: url("../img/arrow_right_green.png") no-repeat center
+      size: 9px
+    top: 15%
+    &:hover, &:focus
+      background: url("../img/arrow_right_black.png") no-repeat center #00ad5d
+        size: 9px
+      border-color: #00ad5d
+  .slick-prev
+    background: url("../img/arrow_left_green.png") no-repeat center
+      size: 9px
+    left: auto
+    right: 0
+    top: 52%
+    &:hover, &:focus
+      background: url("../img/arrow_left_black.png") no-repeat center #00ad5d
+        size: 9px
+      border-color: #00ad5d
+
+.slogan-games__slider, .main-slogan-games__slider
+  width: 100%
+  padding: 0 58px 0 0
+
+
+.main-slogan-games__section
+  width: 100%
+  margin: 0 0 120px
+  .slick-arrow
+    width: 42px
+    height: 42px
+    border: 1px solid #00ad5d
+      radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    transform: translate(0)
+    z-index: 2
+  .slick-next
+    background: url("../img/arrow_right_green.png") no-repeat center
+      size: 9px
+    top: 35%
+    &:hover, &:focus
+      background: url("../img/arrow_right_black.png") no-repeat center #00ad5d
+        size: 9px
+      border-color: #00ad5d
+  .slick-prev
+    background: url("../img/arrow_left_green.png") no-repeat center
+      size: 9px
+    left: auto
+    right: 0
+    top: 55%
+    &:hover, &:focus
+      background: url("../img/arrow_left_black.png") no-repeat center #00ad5d
+        size: 9px
+      border-color: #00ad5d
+
+.main-slogan-games__box
+  margin: 0 auto
+  width: 262px
+  border-radius: 25px
+  background-color: #1f2532
+  overflow: hidden
+  position: relative
+  padding: 19px 20px 20px
+  .league-number
+    margin: 10px 0 22px
+  .bid-information
+    margin: 30px 0 0
+    font-size: 16px
+    font-weight: 400
+  .your-bid
+    margin: 15px 0
+    display: flex
+    align-items: center
+    width: 100%
+    justify-content: flex-start
+    span
+      margin: 0 0 0 5px
+  .coefficient-wrapper
+    margin: 0 0 16px
+  .bet-result
+    margin: 29px 0 0
+    font-size: 16px
+    text-align: center
+    h6
+      font-size: 24px
+    p
+      margin: 25px 0 0 0
+  .btn
+    margin: 17px auto 0
+    width: 100%
+    padding: 0
+    height: 30px
+    font-size: 16px
+    font-weight: 400
+
+
+.bid-information__title
+  cursor: pointer
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  .icon-arrow
+    transform: rotate(180deg)
+    transition: .3s ease
+
+.bid-information__title.on
+  .icon-arrow
+    transform: rotate(0)
+
+.bid-information__text
+  display: none
+
+.bets-are-made
+  .number-of-bets__wrapper
+    margin: 0 0 63px
