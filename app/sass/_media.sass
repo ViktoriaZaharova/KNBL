@@ -135,6 +135,27 @@
   .battle-figure.battle-figure-right .icon
     width: 270px
 
+  .login-section__content
+    padding: 31px 20px 10px
+
+  .top-balance__content
+    padding: 0
+
+  .faq-content__box
+    max-width: 454px
+
+  .tournament-participants
+    max-width: 190px
+
+  .tournament-rate
+    max-width: 130px
+
+  .tournaments-section .line-subtitle
+    margin: 0 0 31px
+
+  .tournaments-section__line .box-item
+    max-width: 310px
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1050px)
@@ -494,6 +515,64 @@
       width: 200px
       height: 200px
 
+  .login-section__content
+    .bottom-line
+      flex-wrap: wrap
+    .links-wrapper
+      width: 100%
+      text-align: center
+      justify-content: center
+      margin: 29px 0 0 0
+    .social-entrance
+      margin: 0 0 0 auto
+
+  .login-form__login button
+    width: 270px
+    padding: 0
+    height: 50px
+    margin: 31px auto 0
+
+  .registration-section__content .social-entrance
+    margin: 38px 0 26px
+
+  .list-payment li
+    margin: 0 15px 15px 0
+    &:last-child
+      margin: 0 0 15px
+
+  .faq-content__box
+    max-width: 334px
+
+  .faq-content__box-title
+    padding: 29px 70px 24px
+    text-align: center
+    &:before
+      width: 27px
+      height: 27px
+      font-size: 38px
+
+  .list-question li .text
+    max-height: 55px
+
+  .faq-section h1
+    margin: 0 0 30px
+
+  .tournaments-section
+    .line-subtitle
+      flex-direction: column
+      align-items: center
+
+      .subtitle
+        text-align: center
+        p
+          font-size: 18px
+          margin: 15px 0 0 0
+
+  .all-tournaments
+    margin: 28px 0 31px
+
+  .tournaments-section__line
+    flex-wrap: wrap
 
 @media only screen and (max-width: 767px)
   .main-text__title
@@ -857,6 +936,71 @@
       width: 85px
       height: 110px
 
+  .captcha
+    margin: 0 auto
+
+  .forgot-password__form .information .mail
+    font-size: 16px
+    margin: 28px auto 0
+
+  .faq-content__box
+    max-width: none
+    margin: 0 auto 30px
+    &:last-child
+      margin: 0 auto
+
+  .list-question
+    li
+      a
+        .text
+          margin: 0
+          max-height: none
+
+  .table-rating__body .number
+    font-size: 18px
+
+  .tournaments-section__line
+    flex-direction: column
+    align-items: center
+    display: none
+    &:nth-child(-n+8)
+      display: flex
+    .box-item
+      max-width: none
+      align-items: center
+      justify-content: center
+      margin: 0 0 23px
+      .rating-icon
+        display: none
+      .name-tournament
+        flex-direction: column
+        display: flex
+        align-items: center
+        text-align: center
+        .item-line
+          flex-direction: column
+          align-items: center
+          .number
+            order: 1
+    .btn
+      width: 270px
+
+  .tournament-rate, .tournament-participants, .for-whom
+    max-width: none
+    text-align: center
+    justify-content: center
+    align-items: center
+
+  .tournament-participants
+    margin: 18px 0 24px
+
+  .for-whom
+    margin: 0 0 28px
+
+  .tournaments-section__content
+    height: auto
+    overflow-y: visible
+    margin: 0 0 20px
 
 
 @media only screen and (max-width: 576px)
@@ -868,6 +1012,8 @@
       font-weight: 400
       margin: 0 0 28px
 
+  .all-tournaments, .tournaments-section .line-subtitle a.btn
+    width: 290px
 
   .window-links
     font-size: 18px
@@ -947,6 +1093,46 @@
       right: auto
       bottom: 0
       position: relative
+
+  .payment-system
+    margin: 30px 0 0
+    h5
+      margin: 0 0 29px
+
+  .list-payment
+    li
+      width: auto
+      margin: 0 10px 15px 0
+      &:last-child
+        margin: 0 0 15px
+      .icon
+        margin: 0 auto
+    a
+      .text
+        display: none
+
+  .table-rating .number
+    width: 50px
+
+  .table-rating .player
+    padding: 0
+    width: calc(100% - 180px)
+    .name
+      font-size: 16px
+      margin: 0
+      sub
+        display: none
+
+  .table-rating__body .line
+    padding: 14px 0
+
+
+  .table-rating
+    .total-games
+      width: 60px
+    .total-wins
+      width: 70px
+
 
 @media only screen and (max-width: 480px)
   .balance-account
@@ -1051,6 +1237,46 @@
   .main-slogan-games__section
     margin: 0 0 90px
 
+  .login-section__content .links-wrapper
+    flex-direction: column
+    align-items: center
+    a
+      margin: 20px auto 0
+      &:first-child
+        margin: 0
+
+  .login-section__content
+    .bottom-line
+      flex-direction: column
+      align-items: flex-start
+    .social-entrance
+      margin: 25px auto 0 0
+
+  .login-section
+    margin: 60px 0
+    form
+      margin: 35px 0 0 0
+
+
+  .registration-section__content .social-entrance
+    flex-direction: column
+    align-items: center
+    margin: 38px 0 26px
+    .social-button__wrapper
+      margin: 16px auto 27px
+
+  .social-entrance .links
+    margin: 0
+
+  .top-balance__content .links-wrapper a.btn
+    margin: 0 auto 10px
+    &:last-child
+      margin: 0 auto 10px
+    &:first-child
+      margin: 0
+
+  .btn-output
+    order: 1
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 340px)

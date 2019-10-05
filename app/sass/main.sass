@@ -376,6 +376,10 @@ button, .btn-primary, .btn-secondary
 .green
   color: $secondary-fgcolor
 
+a.green
+  &:hover
+    color: #fff
+
 .red
   color: #f24841
 
@@ -504,6 +508,497 @@ a.white
     color: $secondary-fgcolor
     .a-plus
       margin: 0 0 0 20px
+
+
+//login-section
+.login-section
+  margin: 119px 0 143px
+  form
+    margin: 50px 0 0 0
+    input
+      border-color: #00ad5d
+    .form-group
+      margin: 0 0 25px
+
+.login-section__content
+  display: flex
+  flex-direction: column
+  padding: 31px 97px 0
+  border-radius: 35px
+  background-color: #1f2532
+  .links-wrapper
+    display: flex
+    align-items: center
+    .links
+      &:hover
+        color: #00ad5d
+    a
+      color: #fff
+      margin: 0 0 0 35px
+      &:first-child
+        margin: 0
+    .green
+      color: #00ad5d
+      &:hover
+        color: #fff
+  .bottom-line
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    .social-entrance
+      margin: 0 auto 0 62px
+
+
+.social-entrance
+  display: flex
+  align-items: center
+  .links
+    margin: 0 0 0 27px
+
+
+.social-button__wrapper
+  display: flex
+  align-items: center
+  margin: 0 0 0 29px
+  a
+    padding: 5px
+    margin: 0 17px 0 0
+    &:last-child
+      margin: 0
+    svg
+      display: inline-block
+      fill: #1f2532
+
+
+.login-form__login
+  button
+    margin: 87px auto -23px
+    width: 252px
+    padding: 0
+    height: 50px
+  label
+    font-size: 18px
+
+
+.forgot-password__form
+  .information
+    text-align: center
+    .mail
+      font-size: 24px
+      margin: 44px auto 0
+  button
+    margin: 60px auto -23px
+
+
+.captcha
+  width: 260px
+
+.registration-section__content
+  .social-entrance
+    margin: 32px 0 24px
+
+.form-label-group__dropdown.show
+  .dropdown-toggle
+    &:after
+      transform: rotate(180deg)
+
+.form-label-group__dropdown
+  width: 100%
+  .dropdown-toggle
+    width: 100%
+    color: #fff
+    border-bottom: 1px solid #00ad5d
+    position: relative
+    padding: 8px 3px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &:after
+      content: ''
+      display: inline-block
+      margin: 0 0 0 auto
+      border:
+        top: 8px solid #00ad5d
+        left: 8px solid transparent
+        right: 8px solid transparent
+      transition: .3s ease
+
+.country-dropdown-menu.dropdown-menu
+  background: #1f2532
+  max-height: 208px
+  overflow-y: scroll
+  margin: 10px 0 0 0
+  &::-webkit-scrollbar-track
+    background-color: #00ad5d
+    border-radius: 4px
+    border: none
+  &::-webkit-scrollbar-track-piece
+    background-color: #444d68
+    border-radius: 4px
+  &::-webkit-scrollbar-thumb
+    background-color: #00ad5d
+    border: none
+    width: 6px
+    border-radius: 4px
+  &::-webkit-scrollbar-corner
+    background-color: #444d68
+    border-radius: 4px
+  &::-webkit-resizer
+    background-color: #00ad5d
+    border-radius: 4px
+    border: none
+  a
+    padding: 12px 0
+    color: #fff
+    &:hover
+      color: #00ad5d
+
+.top-balance__content
+  padding: 0
+  background: transparent
+  border-radius: 0
+  .links-wrapper
+    a.btn
+      padding: 0
+      width: 252px
+      height: 50px
+      margin: 0 0 0 10px
+      &:first-child
+        margin: 0
+
+.yor-score
+  display: flex
+  align-items: center
+  font-size: 24px
+  span
+    font-weight: 700
+    margin: 0 0 0 5px
+
+.payment-system
+  display: flex
+  flex-wrap: wrap
+  margin: 39px 0 0 0
+  h5
+    font-size: 24px
+    width: 100%
+    margin: 0 0 27px
+
+.list-payment
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    width: 149px
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    margin: 0 80px 0 0
+    &:last-child
+      margin: 0
+  .icon
+    width: 86px
+    height: 86px
+    border-radius: 25px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #1f2532
+    margin: 0 auto 10px
+  .icon-active
+    display: none
+  a
+    color: #fff
+    &:hover
+      color: #00ad5d
+      .icon
+        display: none
+      .icon-active
+        display: flex
+  .green
+    display: block
+  .active
+    color: #00ad5d
+    .icon
+      display: none
+    .icon-active
+      display: flex
+
+
+//faq
+.faq-content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.faq-content__box
+  max-width: 544px
+  width: 100%
+  border-radius: 35px
+  background-color: #1f2532
+  margin: 0 0 60px
+  overflow: hidden
+
+.faq-content__box-title
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  border-bottom: 1px solid rgba(#fff, .1)
+  padding: 30px 0
+  box-sizing: border-box
+  font-size: 24px
+  &:before
+    content: '+'
+    position: absolute
+    right: 22px
+    top: 50%
+    transform: translate(0,-50%)
+    width: 42px
+    height: 42px
+    border: 1px solid #00ad5d
+      radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 60px
+    color: #00ad5d
+
+.faq-section
+  h1
+    margin: 0 0 60px
+
+.list-question
+  li
+    padding: 20px 20px 17px
+    border-bottom: 1px solid rgba(#fff, .1)
+    &:last-child
+      border: none
+    h5
+      color: #00ad5d
+      font-weight: 600
+    .text
+      max-height: 35px
+      overflow: hidden
+      margin: 14px 0
+    .links
+      color: #00ad5d
+      &:hover
+        color: #fff
+
+
+//rating table
+.rating-section__content
+  form
+    .form-group
+      margin: 0
+      input
+        border-color: #1f2532
+
+.form-search
+  justify-content: space-between
+  align-items: flex-end
+  display: flex
+
+  .btn-search
+    width: 40px
+    height: 36px
+    margin: 0
+  .form-group
+    margin: 0
+    width: calc(100% - 52px)
+    label
+      margin: 0
+
+.btn-search
+  padding: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 40px
+  height: 36px
+  border-radius: 5px
+  background-color: #00ad5d
+  svg
+    fill: #fff
+    width: 18px
+    height: 18px
+
+
+.table-rating
+  width: 100%
+  height: 890px
+  margin: 60px 0 0
+  border-radius: 35px
+  background-color: #1f2532
+  font-size: 18px
+  overflow-x: hidden
+  .number
+    width: 70px
+    text-align: center
+  .player
+    padding: 0 0 0 30px
+    width: calc(100% - 250px)
+  .total-wins
+    width: 80px
+    text-align: center
+  .total-games
+    width: 100px
+    text-align: center
+  .avatar-user
+    .user-loc
+      margin: 0 11px 0 0
+
+.table-rating__head
+  width: 100%
+  display: flex
+  align-items: center
+  padding: 32px 0 27px
+  font-size: 18px
+  color: #00cd6e
+
+
+.table-rating__body
+  .line
+    display: flex
+    align-items: center
+    padding: 8px 0 9px
+    &:nth-child(odd)
+      background-color: rgba(#00cd6e, .3)
+  .number
+    font-size: 24px
+    color: #00ad5d
+
+
+//tournaments-section
+.tournaments-section
+  .line-subtitle
+    margin: 0 0 119px
+    a.btn
+      width: 167px
+      height: 50px
+      font-weight: 500
+    .subtitle
+      p
+        font-size: 24px
+        font-weight: 400
+        span
+          font-weight: 700
+
+.all-tournaments.show
+  border-radius: 10px 10px 0 0
+
+.all-tournaments
+  width: 360px
+  border-radius: 10px
+  background-color: #1f2532
+  .dropdown-toggle
+    padding: 11.5px 20px
+    color: #fff
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &:after
+      border-top-color: #00ad5d
+  .dropdown-menu
+    background-color: #1f2532
+    border-radius: 0 0 10px 10px
+    a
+      color: #fff
+      padding: 14px 19px
+      cursor: pointer
+      &:hover
+        color: #00ad5d
+    .active
+      color: #00ad5d
+
+.tournaments-section__content
+  width: 100%
+  margin: 0 0 50px
+  height: 631px
+  overflow-y: scroll
+
+.tournaments-section__line
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border-radius: 35px
+  background-color: #1f2532
+  margin: 0 0 10px
+  padding: 10px 9px 10px 15px
+  .box-item
+    display: flex
+    align-items: center
+    max-width: 320px
+    width: 100%
+    .rating-icon
+      width: 36px
+      margin: 0 8px 0 0
+  .btn
+    width: 252px
+    height: 50px
+    padding: 0
+
+.name-tournament
+  h6
+    font-size: 18px
+    margin: 0 0 7px
+  .item-line
+    display: flex
+    align-items: center
+    .number
+      margin: 0 16px 0 0
+
+.tournament-rate, .tournament-participants, .for-whom
+  font-weight: 500
+  font-size: 18px
+
+.tournament-rate
+  max-width: 150px
+  width: 100%
+
+.tournament-participants
+  max-width: 215px
+  width: 100%
+
+.for-whom
+  display: flex
+  align-items: center
+  max-width: 110px
+  width: 100%
+
+.item__pro
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 0 10px
+  font-weight: 400
+  font-size: 14px
+  border-radius: 5px
+  background-color: #00ad5d
+  width: 51px
+  height: 23px
+
+.color-orange
+  fill: #de6e00
+  color: #de6e00
+
+.color-silver
+  fill: #9ea2b0
+  color: #9ea2b0
+
+.color-yellow
+  fill: #fbca4b
+  color: #fbca4b
+
+.color-blue
+  fill: #01c8e9
+  color: #01c8e9
 
 
 

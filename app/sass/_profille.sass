@@ -54,8 +54,8 @@
 
 
 .nav-language__button
+  padding: 5px 10px
   border-radius: 8px
-  padding: 10px
   font-size: 16px
   background: #37425c
   display: flex
@@ -433,6 +433,9 @@
     &:last-child
       a
         border: none
+    .active
+      a
+        color: $secondary-fgcolor
 
 .form-container
   background-color: #1f2532
@@ -534,7 +537,6 @@ select
   display: block
   position: relative
   padding-left: 20px
-  margin-bottom: 12px
   cursor: pointer
   -webkit-user-select: none
   -moz-user-select: none
@@ -548,6 +550,10 @@ select
     cursor: pointer
     height: 0
     width: 0
+  a
+    display: inline
+  label
+    padding: 0
 
 // the custom checkbox
 .checkmark
@@ -594,15 +600,22 @@ input:checked ~ label > .checkmark:after
   -moz-border-radius: 3px
   border-radius: 3px
   color: #1f2532
-  display: inline-flex
-  flex-direction: column
+  display: flex
+  align-items: center
   justify-content: center
-  text-align: center
   height: 2rem
   width: 2rem
+  svg
+    transition: .3s ease
+  &:hover
+    background-color: #00ad5d
+    svg
+      fill: #fff
+
 
 .social-vk-button
   background-color: #00ad5d
+
 
 .social-facebook-button
   background-color: #3c445d
@@ -798,6 +811,9 @@ footer
   overflow: hidden
   .withdraw
     color: #f24841
+    &:hover
+      background: #f24841
+      color: #fff
   a
     margin: 0 0 0 11px
     border-radius: 10px
