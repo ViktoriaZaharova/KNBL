@@ -16,6 +16,29 @@ $(document).ready(function() {
        $(this).toggleClass('on').siblings('.bid-information__text').slideToggle();
     });
 
+    // show list all
+    $('.list-question li .links').on('click', function(e){
+        e.preventDefault();
+
+        var
+            $this = $(this),
+            content = $(this).siblings('.text');
+
+
+        if(!$this.hasClass('trigger')){
+            $this.addClass('trigger');
+            $this.html('Скрыть');
+
+            content.addClass('open');
+        } else {
+            $this.removeClass('trigger');
+            $this.html('Читать подробнее');
+
+            content.removeClass('open');
+        }
+    });
+// show list all
+
     // slick active
     $(window).on('load resize', function() {
         if ($(window).width() < 992) {
