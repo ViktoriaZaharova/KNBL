@@ -738,34 +738,49 @@ footer
   display: flex
   flex-direction: column
 
+.user-account.show
+  .dropdown-toggle
+    &:after
+      transform: rotate(180deg)
+
 .user-account
   display: flex
-  align-items: center
+  align-items: flex-start
   margin: 0 0 0 auto
-  &:after
-    vertical-align: .255em
-    display: inline-block
-    content: ''
-    position: relative
-    margin-left: 10px
-    border:
-      top: 8px solid #00ad5d
-      left: 8px solid transparent
-      right: 8px solid transparent
-    transition: .2s ease
+  .dropdown-toggle
+    &:after
+      vertical-align: .255em
+      display: inline-block
+      content: ''
+      position: absolute
+      right: 0
+      top: 17px
+      border:
+        top: 8px solid #00ad5d
+        left: 8px solid transparent
+        right: 8px solid transparent
+      transition: .2s ease
   .icon
     width: 34px
     margin: 0 10px 0 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    .icon-flag
+      height: 20px
+      width: 22px
   .text
     position: relative
     display: flex
     flex-direction: column
     cursor: pointer
-    padding: 18px 0 0 0
+    padding: 10px 27px 0 0
     h4
       position: relative
 
     .icon-flag
+      height: 20px
       width: 22px
       margin: 2px 0 0 0
 
@@ -775,7 +790,7 @@ footer
   min-width: 320px
   left: auto
   right: 0
-  top: 81px
+  top: 77px
   background-color: #1f2532
   .dropdown-item
     width: 100%

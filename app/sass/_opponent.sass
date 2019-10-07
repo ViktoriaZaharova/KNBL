@@ -101,6 +101,7 @@
   align-items: center
   flex-direction: column
   font-size: 24px
+
   &:nth-child(2)
     margin: 0 70px
   .icon
@@ -111,9 +112,15 @@
     display: flex
     align-items: center
     justify-content: center
+    border: 5px solid transparent
+    transition: .3s ease
     img
       max-width: 60px
       width: 100%
+  &:hover
+    .icon
+      box-shadow: 0 15px 26px rgba(0, 0, 0, 0.34)
+      border-color: #00ad5d
 
 .figures-box__active
   .icon
