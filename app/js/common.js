@@ -1,10 +1,10 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('.footer-box h3').on('click', function () {
-       $(this).toggleClass('on').siblings('.footer__nav-menu').slideToggle();
+        $(this).toggleClass('on').siblings('.footer__nav-menu').slideToggle();
     });
 
     $('.dropdown-menu__user .btn-close').on('click', function () {
-       $(this).parents().removeClass('show');
+        $(this).parents().removeClass('show');
     });
 
     $('.navbar-collapse .btn-close').on('click', function () {
@@ -13,11 +13,11 @@ $(document).ready(function() {
 
 
     $('.bid-information__title').on('click', function () {
-       $(this).toggleClass('on').siblings('.bid-information__text').slideToggle();
+        $(this).toggleClass('on').siblings('.bid-information__text').slideToggle();
     });
 
     // show list all
-    $('.list-question li .links').on('click', function(e){
+    $('.list-question li .links').on('click', function (e) {
         e.preventDefault();
 
         var
@@ -25,7 +25,7 @@ $(document).ready(function() {
             content = $(this).siblings('.text');
 
 
-        if(!$this.hasClass('trigger')){
+        if (!$this.hasClass('trigger')) {
             $this.addClass('trigger');
             $this.html('Скрыть');
 
@@ -37,10 +37,21 @@ $(document).ready(function() {
             content.removeClass('open');
         }
     });
-// show list all
+    // show list all
+    $(window).on('load resize', function () {
+        if ($(window).width() < 992) {
+            $('.tooltip-wrapper .icon').click(function () {
+                $(this).siblings('.tooltip').css('opacity', '1');
+            });
+
+            $('.tooltip-close').click(function () {
+                $(this).parent().css('opacity', '0');
+            });
+        }
+    });
 
     // slick active
-    $(window).on('load resize', function() {
+    $(window).on('load resize', function () {
         if ($(window).width() < 992) {
             $('.profile-tabs:not(.slick-initialized)').slick({
                 dots: false,

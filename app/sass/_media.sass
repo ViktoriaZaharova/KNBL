@@ -180,6 +180,10 @@
   .avatar-user.it-center__right .name
     align-items: flex-end
 
+  .become-participant__wrapper .btn
+    width: 290px
+    font-size: 16px
+
 @media only screen and (max-width: 991px)
   .footer-top
     margin: 0 0 40px
@@ -308,9 +312,11 @@
         .league-name
           margin: 7px auto 10px
     .it-center
-      flex-direction: column
+      //flex-direction: column
       align-items: center
       margin: 13px auto
+      .it-center__center
+        margin: 0 10px
 
   .it-center__center
     font-size: 36px
@@ -358,6 +364,7 @@
           display: flex
         .user-loc
           display: flex
+          align-items: center
         .name
           flex-direction: row
       .it-right
@@ -414,7 +421,7 @@
     margin: 20px 0
 
   .score-game
-    font-size: 48px
+    font-size: 38px
 
   .field-game .avatar-user .name
     font-size: 20px
@@ -583,6 +590,10 @@
 
   .tournaments-section__line
     flex-wrap: wrap
+
+  .tooltip
+    right: calc(100% + 10px)
+    left: auto
 
 @media only screen and (max-width: 767px)
   .main-text__title
@@ -816,6 +827,7 @@
 
   .result-round
     margin: 0 0 28px
+    font-size: 16px
 
   .field-game
     .field-game__bottom
@@ -824,9 +836,6 @@
 
         &:last-child
           margin: 0
-
-  .result-round
-    font-size: 16px
 
   .main-logo__image
     position: absolute
@@ -854,7 +863,8 @@
     margin: 61px auto 0
     .btn
       margin: 0
-      width: 290px
+    .btn-violet
+      margin: 21px 0 0 0
 
   .short-line
     display: none
@@ -1061,6 +1071,9 @@
       &:before
         display: none
 
+  .opponent-selection .field-game .field-game__bottom .btn:last-child
+    margin: 0 auto
+
 
 
 @media only screen and (max-width: 576px)
@@ -1215,6 +1228,7 @@
       padding: 0 13px 0 0
 
 
+
 @media only screen and (max-width: 480px)
   .balance-account
     padding: 34px 25px 31px
@@ -1361,6 +1375,84 @@
 
   .one-tournament
     margin: 0
+
+  .choose-league__wrapper
+    display: flex
+    flex-direction: column
+    .league-wrapper
+      order: -1
+      margin: 30px auto 0
+
+
+  .games-tape
+    margin: 20px 0
+
+  .main-counters__item
+    margin: 0 0 30px
+
+  .figure-selection .field-game .score-game
+    margin: 7px 0
+
+  .opponent-selection
+    padding: 30px 0 0 0
+
+  .bank-wrapper
+    justify-content: space-between
+    flex-direction: row
+
+  .figure-selection .bank
+    margin: 0
+
+  .figure-selection .field-game__top .name
+    font-size: 20px
+    margin: 0 0 10px
+
+  .number-game
+    padding: 15px 0 10px
+
+  .figure-selection .view
+    padding: 15px 0 10px 15px
+
+  .field-game__bottom
+    padding: 20px 10px 10px 10px
+
+  .result-round
+    margin: 0 0 15px
+    ul
+      font-size: 14px
+      line-height: normal
+    h4
+      margin: 0 0 5px
+      font-size: 20px
+
+  .battle-figure .icon
+    height: 65px
+
+  .battle-figure.battle-figure-right .icon
+    height: 60px
+
+  .section-title
+    margin: 0 0 15px
+    h2
+      font-size: 30px
+
+  .field-game__bottom .btn
+    height: 40px
+    font-size: 16px
+
+  .view, .number-game, .victory-score, .bank, .rate
+    font-size: 14px
+
+  .it-center__center
+    font-size: 30px
+
+  .tooltip
+    width: 200px
+    height: auto
+    font-size: 12px
+
+  .tooltip-close
+    display: block
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 340px)
