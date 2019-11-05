@@ -108,6 +108,21 @@ $(document).ready(function () {
             $(".profile-tabs__content.slick-initialized").slick("unslick");
             $(".league-wrapper__slider.slick-initialized").slick("unslick");
         }
+
+        if ($(window).width() < 768) {
+           $('.checkbox-anim').click(function () {
+               if (!$(this).data('status')) {
+                   $(this).siblings('.checkbox__text').html('Trial');
+                   $(this).siblings('.account-rate').html('T').removeClass('account-rate__real');
+                   $(this).data('status', true);
+               }
+               else {
+                   $(this).siblings('.checkbox__text').html('Real');
+                   $(this).siblings('.account-rate').html('R').addClass('account-rate__real');
+                   $(this).data('status', false);
+               }
+           });
+        }
     });
 // slick active
 
