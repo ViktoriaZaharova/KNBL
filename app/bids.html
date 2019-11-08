@@ -391,7 +391,7 @@
 
                 <div class="field-game__top d-flex flex-row justify-content-between col-12">
 
-                    <div class="col-6 col-md-5 field-game__top-left d-flex flex-rowflex-wrap">
+                    <div class="col-4 col-md-5 field-game__top-left d-flex flex-row flex-wrap">
                         <div class="view">
                             <div class="icon"><img src="img/vision.png" alt=""></div>
                             <div class="text">36</div>
@@ -403,6 +403,12 @@
                             </label>
                             <button type="submit"></button>
                         </form>
+                    </div>
+
+                    <div class="col-4 d-flex d-md-none justify-content-center">
+                        <div class="timer-wrapper">
+                            <div class="timer">5</div>
+                        </div>
                     </div>
 
                     <div class="col-12 col-md-2 order-md-0 order-1">
@@ -417,7 +423,7 @@
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-5 field-game__top-right d-flex flex-row flex-wrap">
+                    <div class="col-4 col-md-5 field-game__top-right d-flex flex-row flex-wrap">
                         <form method="post" class="bet-amount d-none d-md-flex">
                             <label>
                                 <input type="text" placeholder="Введите сумму ставки, ₽">
@@ -464,6 +470,27 @@
                         <a href="#" class="btn btn-border">Ставка на Игрок №1</a>
                     </div>
 
+
+                </div>
+
+                <div class="col-6 justify-content-center d-flex d-md-none flex-column align-item-center">
+                    <div class="avatar-user">
+                        <div class="user-loc"><img src="img/russia.svg" alt=""></div>
+
+                        <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
+                        <div class="name">
+                            <h5>Игрок №1 <sub class="green">PRO</sub></h5>
+                        </div>
+                    </div>
+
+                    <div class="rate">
+                        <div class="rate-icon"><img src="img/stavka.png" alt=""></div>
+                        <p>10 </p>
+                        <span>(50 ₽)</span>
+                    </div>
+                </div>
+
+                <div class="col-6 justify-content-center d-flex d-md-none flex-column align-item-center">
                     <div class="avatar-user">
                         <div class="user-loc"><img src="img/russia.svg" alt=""></div>
 
@@ -580,46 +607,8 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 justify-content-center d-flex d-md-none flex-column align-item-center">
-                    <div class="avatar-user">
-                        <div class="user-loc"><img src="img/russia.svg" alt=""></div>
-
-                        <div class="avatar"><img src="img/avatar_player.png" alt=""></div>
-                        <div class="name">
-                            <h5>Игрок №2 <sub class="green">PRO</sub></h5>
-                        </div>
-                    </div>
-
-
-                    <div class="info-rate">
-                        <div class="rate">
-                            <div class="rate-icon"><img src="img/stavka.png" alt=""></div>
-                            <p>2 </p>
-                            <span>(10 ₽)</span>
-                        </div>
-
-                        <ul class="coefficient-wrapper d-none d-md-flex">
-                            <li>
-                                <p>Коэф.:</p>
-                                <span class="green">1,5</span>
-                            </li>
-                            <li>
-                                <p>В случае победы:</p>
-                                <span class="green">13,5 ₽</span>
-                            </li>
-                            <li>
-                                <p>Спортсмену уходит: </p>
-                                <span class="green">1,5 ₽</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
 
                 <div class="field-game__bottom col-12">
-                    <div class="timer-wrapper d-flex d-md-none">
-                        <div class="timer">5</div>
-                    </div>
-
                     <a href="#" class="btn btn-green_2 btn-primary">Выйти</a>
                 </div>
 
