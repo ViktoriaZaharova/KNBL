@@ -220,7 +220,7 @@
                 </div>
             </div>
 
-            <div class="row field-game">
+            <div class="row field-game field-game__disable">
 
                 <div class="field-game__top d-flex flex-row justify-content-between col-12">
 
@@ -338,7 +338,8 @@
                     </div>
                 </div>
 
-                <div class="battle-figure col-6 col-md-4">
+                <div class="battle-figure col-6 col-md-4 battle-figure__disable">
+                    <div class="battle-figure__disable-title">Фигура не выбрана</div>
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.42 458.02">
                             <g>
@@ -373,8 +374,11 @@
                     <div class="vs m-20">:</div>
                     <div class="number">0</div>
 
-                    <div class="timer-wrapper d-none d-md-flex w-100">
-                        <div class="timer">5</div>
+                    <div class="timer-wrapper d-none d-md-flex w-100 ">
+                        <div class="result-round">
+                            <h4 class="color-yellow">Ничья</h4>
+                            <p>У вас ничья. Раунд будет перезапущен автоматически, ожидайте...</p>
+                        </div>
                     </div>
                 </div>
 

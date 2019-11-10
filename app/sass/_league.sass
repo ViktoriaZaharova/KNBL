@@ -252,10 +252,15 @@
     .user-loc
       margin: 0 5px 0 0
 
+.avatar-user.avatar-user__two
+  .tooltip
+    left: auto
+    right: 0
 
 .avatar-user
   display: flex
   align-items: center
+  position: relative
   .avatar
     width: 32px
     height: 32px
@@ -264,7 +269,6 @@
     font-weight: 500
     font-size: 14px
     display: flex
-    //flex-direction: column
     align-items: flex-end
   sub
     font-size: 10px
@@ -273,6 +277,15 @@
   .user-loc
     margin: 0 0 0 5px
     width: 16px
+  .tooltip
+    left: 0
+    top: 100%
+    transform: translate(0)
+    max-width: 220px
+  &:hover
+    .tooltip
+      opacity: 1
+      visibility: visible
 
 .avatar-user.it-center__right
   .name
